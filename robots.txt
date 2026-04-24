@@ -1,0 +1,33 @@
+# Arthlens · robots.txt
+# Primary sitemap: https://arthlens.example/sitemap.xml
+# Replace the domain below with your production domain before deploy.
+
+User-agent: *
+Allow: /
+Disallow: /results.html
+Disallow: /build/
+Disallow: /.claude/
+Disallow: /*?country=
+Disallow: /*?q=
+
+# AdSense crawler (explicitly allowed)
+User-agent: Mediapartners-Google
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /results.html
+Disallow: /build/
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /assets/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /results.html
+Disallow: /build/
+
+Sitemap: https://arthlens.example/sitemap.xml

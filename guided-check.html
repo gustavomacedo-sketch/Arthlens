@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guided Check — Arthlens</title>
+  <meta name="description" content="Answer five short questions to receive an India-focused editorial guide on credit card and loan categories that may fit your profile. No credit score impact, no obligation.">
+  <meta name="theme-color" content="#C21E38">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://arthlens.example/guided-check.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+  <meta name="google-adsense-account" content="ca-pub-7173834602416158">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7173834602416158" crossorigin="anonymous"></script>
+</head>
+<body class="quiz-shell">
+
+  <div class="quiz-top">
+    <div class="container inner">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true">A</span>
+        <span>Arthlens</span>
+        <span class="section-label">Guided Check</span>
+      </a>
+      <div class="quiz-progress">
+        <div class="progress" role="progressbar" aria-label="Progress">
+          <span id="quiz-progress" style="width:10%"></span>
+        </div>
+      </div>
+      <span class="step-label" id="step-label">Step 1 of 5</span>
+      <span class="locale-badge" id="locale-badge" title="Detected country · click to change">
+        <span class="flag">🌐</span>
+        <span class="cc" data-locale-cc>—</span>
+        <span class="cur" data-locale-cur></span>
+      </span>
+      <a class="exit" href="/">Exit</a>
+    </div>
+  </div>
+
+  <!-- Subtle leaderboard above the quiz (one placement only; no ads during answering) -->
+  <div class="container">
+    <aside class="ad ad-leaderboard" style="margin:20px auto 0;" aria-label="Advertisement">
+      <div class="placeholder">Top leaderboard unit</div>
+    </aside>
+  </div>
+
+  <main class="quiz-main" id="quiz-root">
+    <section class="quiz-card">
+      <div class="step-counter">Loading…</div>
+      <h1>Preparing your guided check</h1>
+      <p class="lead">If the check doesn't load, enable JavaScript and refresh the page.</p>
+    </section>
+  </main>
+
+  <!-- Below-form ad (matches quiz card width) -->
+  <div class="container">
+    <aside class="ad ad-inline" style="max-width:740px;margin:0 auto 48px;" aria-label="Advertisement">
+      <div class="placeholder">Below-form ad unit</div>
+      <!-- Replace with <ins class="adsbygoogle"> snippet once approved -->
+    </aside>
+  </div>
+
+  <footer style="padding:22px 0;text-align:center;color:var(--muted);font-family:var(--font-ui);font-size:var(--fs-xs);border-top:1px solid var(--rule);">
+    <div class="container">
+      Arthlens is an educational comparison guide. No credit decisions are made on this site.
+      · <a href="/policies/privacy.html" style="color:var(--muted);">Privacy</a> · <a href="/policies/terms.html" style="color:var(--muted);">Terms</a>
+    </div>
+  </footer>
+
+
+  <aside class="ad ad-sticky-mobile" role="complementary" aria-label="Advertisement"><div class="placeholder">320 × 50 mobile</div><button class="close" type="button" aria-label="Dismiss ad">×</button></aside>
+
+  <!-- Country / locale picker modal (opened by clicking the locale badge) -->
+  <div id="locale-modal" class="locale-modal" hidden>
+    <div class="locale-modal-card" role="dialog" aria-labelledby="locale-title">
+      <h3 id="locale-title">Choose your country</h3>
+      <p>Amounts, currency and bureau references will update.</p>
+      <select id="locale-select" aria-label="Country"></select>
+      <div class="locale-modal-actions">
+        <button type="button" class="btn btn-ghost btn-sm" data-cancel>Cancel</button>
+        <button type="button" class="btn btn-accent btn-sm" data-apply>Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/i18n.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/quiz.js" defer></script>
+  <script defer>
+    // Hydrate the locale badge + switcher modal
+    document.addEventListener('arthlens:i18n-ready', (e) => {
+      const loc = e.detail;
+      document.querySelectorAll('[data-locale-cc]').forEach(el => el.textContent = loc.cc);
+      document.querySelectorAll('[data-locale-cur]').forEach(el => el.textContent = '· ' + loc.currency);
+    });
+    // Populate + open/close modal
+    window.addEventListener('DOMContentLoaded', () => {
+      const modal  = document.getElementById('locale-modal');
+      const select = document.getElementById('locale-select');
+      const badge  = document.getElementById('locale-badge');
+      const cancel = modal.querySelector('[data-cancel]');
+      const apply  = modal.querySelector('[data-apply]');
+      const LOCALES = (window.Arthlens && window.Arthlens.i18n.LOCALES) || {};
+      Object.keys(LOCALES).sort().forEach(cc => {
+        const o = document.createElement('option');
+        o.value = cc;
+        o.textContent = cc + ' · ' + LOCALES[cc].country.replace(/^(the |o |a )/, '');
+        select.appendChild(o);
+      });
+      badge.addEventListener('click', () => {
+        select.value = (window.Arthlens.i18n.current || {}).cc || 'IN';
+        modal.hidden = false;
+      });
+      cancel.addEventListener('click', () => { modal.hidden = true; });
+      apply.addEventListener('click', () => {
+        window.Arthlens.i18n.set(select.value);
+        modal.hidden = true;
+      });
+      modal.addEventListener('click', (e) => { if (e.target === modal) modal.hidden = true; });
+    });
+  </script>
+</body>
+</html>
