@@ -1,0 +1,9 @@
+{
+  "name": "arthlens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arthlens — Global Editorial Guides",
+  "dependencies": {
+    "@vercel/functions": "^2.0.0"
+  }
+}
