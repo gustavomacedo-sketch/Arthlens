@@ -1,6 +1,5 @@
 # Arthlens · robots.txt
-# Primary sitemap: https://arthlens.example/sitemap.xml
-# Replace the domain below with your production domain before deploy.
+# Primary sitemap: https://arthlens.com/sitemap.xml
 
 User-agent: *
 Allow: /
@@ -30,4 +29,4 @@ Allow: /
 Disallow: /results.html
 Disallow: /build/
 
-Sitemap: https://arthlens.example/sitemap.xml
+Sitemap: https://arthlens.com/sitemap.xml
