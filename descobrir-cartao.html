@@ -1,20 +1,24 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Diagnóstico de Cartão de Crédito — Descubra a categoria ideal · Arthlens</title>
-  <meta name="description" content="Diagnóstico editorial em 11 etapas: descubra quais categorias de cartão de crédito são mais compatíveis com seu perfil financeiro. Conteúdo educativo, gratuito, sem consulta a bureaus.">
+  <meta name="description"
+    content="Diagnóstico editorial em 11 etapas: descubra quais categorias de cartão de crédito são mais compatíveis com seu perfil financeiro. Conteúdo educativo, gratuito, sem consulta a bureaus.">
   <meta name="theme-color" content="#0F0C29">
   <meta name="robots" content="noindex,follow">
   <link rel="canonical" href="https://arthlens.com/descobrir-cartao.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
 
-  <meta name="google-adsense-account" content="ca-pub-2206105468359460">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2206105468359460" crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-2010551307643944">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2010551307643944"
+    crossorigin="anonymous"></script>
 
   <style>
     /* =========================================================
@@ -23,8 +27,18 @@
        experiência; transição editorial Arthlens no final.
        ========================================================= */
 
-    *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
 
     :root {
       --bg-1: #0F0C29;
@@ -44,9 +58,9 @@
       --line: #E2E8F0;
       --line-soft: #F1F5F9;
       --bg-soft: #F8FAFC;
-      --shadow-card: 0 25px 60px rgba(0,0,0,.30);
-      --shadow-pop: 0 10px 30px rgba(124,58,237,.35);
-      --shadow-gold: 0 10px 30px rgba(245,158,11,.45);
+      --shadow-card: 0 25px 60px rgba(0, 0, 0, .30);
+      --shadow-pop: 0 10px 30px rgba(124, 58, 237, .35);
+      --shadow-gold: 0 10px 30px rgba(245, 158, 11, .45);
     }
 
     body {
@@ -63,18 +77,27 @@
     }
 
     @keyframes bgShift {
-      0%   { background-position: 0% 50%; }
-      50%  { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     /* Glow pontilhado no fundo (sutil) */
     body::before {
       content: '';
-      position: fixed; inset: 0;
+      position: fixed;
+      inset: 0;
       background:
-        radial-gradient(800px 400px at 20% 10%, rgba(124,58,237,.18), transparent 60%),
-        radial-gradient(600px 400px at 80% 80%, rgba(245,158,11,.10), transparent 65%);
+        radial-gradient(800px 400px at 20% 10%, rgba(124, 58, 237, .18), transparent 60%),
+        radial-gradient(600px 400px at 80% 80%, rgba(245, 158, 11, .10), transparent 65%);
       pointer-events: none;
       z-index: 0;
     }
@@ -85,7 +108,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 24px 16px 80px;
+      padding: 24px 16px 140px;
       min-height: 100vh;
     }
 
@@ -93,7 +116,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      color: rgba(255,255,255,.85);
+      color: rgba(255, 255, 255, .85);
       font-size: 13px;
       font-weight: 600;
       letter-spacing: .04em;
@@ -101,12 +124,17 @@
       margin-bottom: 18px;
       text-decoration: none;
     }
+
     .top-mark .dot {
-      width: 26px; height: 26px;
+      width: 26px;
+      height: 26px;
       border-radius: 8px;
       background: linear-gradient(135deg, var(--primary), var(--gold));
-      display: grid; place-items: center;
-      font-size: 14px; font-weight: 800; color: white;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      font-weight: 800;
+      color: white;
     }
 
     /* ---------- Card central ---------- */
@@ -122,6 +150,7 @@
       overflow: hidden;
       transition: box-shadow .3s ease;
     }
+
     .card.is-celebrating {
       box-shadow: 0 0 0 4px var(--gold), var(--shadow-card);
     }
@@ -136,6 +165,7 @@
       border-bottom: 1px solid var(--line);
       margin-bottom: 18px;
     }
+
     .level-badge {
       display: inline-flex;
       align-items: center;
@@ -149,20 +179,28 @@
       letter-spacing: .02em;
       white-space: nowrap;
     }
-    .progress-mini { min-width: 0; }
+
+    .progress-mini {
+      min-width: 0;
+    }
+
     .progress-mini .bar {
-      width: 100%; height: 6px;
+      width: 100%;
+      height: 6px;
       background: var(--line);
       border-radius: 999px;
       overflow: hidden;
     }
-    .progress-mini .bar > span {
-      display: block; height: 100%;
+
+    .progress-mini .bar>span {
+      display: block;
+      height: 100%;
       width: 0%;
       background: linear-gradient(90deg, var(--primary), var(--gold));
       border-radius: 999px;
-      transition: width .55s cubic-bezier(.2,.8,.2,1);
+      transition: width .55s cubic-bezier(.2, .8, .2, 1);
     }
+
     .progress-mini small {
       display: block;
       font-size: 11px;
@@ -170,6 +208,7 @@
       margin-top: 4px;
       font-weight: 600;
     }
+
     .xp-badge {
       display: inline-flex;
       align-items: center;
@@ -191,6 +230,7 @@
       min-height: 28px;
       margin-bottom: 14px;
     }
+
     .badge-pill {
       display: inline-flex;
       align-items: center;
@@ -202,12 +242,23 @@
       background: var(--bg-soft);
       color: var(--ink-2);
       border: 1px solid var(--line);
-      animation: popIn .45s cubic-bezier(.2,1.4,.4,1);
+      animation: popIn .45s cubic-bezier(.2, 1.4, .4, 1);
     }
+
     @keyframes popIn {
-      0%   { transform: scale(.4); opacity: 0; }
-      60%  { transform: scale(1.15); }
-      100% { transform: scale(1); opacity: 1; }
+      0% {
+        transform: scale(.4);
+        opacity: 0;
+      }
+
+      60% {
+        transform: scale(1.15);
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     /* ---------- Tipografia do card ---------- */
@@ -219,6 +270,7 @@
       color: var(--primary);
       margin-bottom: 8px;
     }
+
     .step-title {
       font-size: 22px;
       font-weight: 800;
@@ -227,6 +279,7 @@
       margin-bottom: 10px;
       letter-spacing: -.01em;
     }
+
     .step-lead {
       font-size: 14.5px;
       line-height: 1.55;
@@ -235,7 +288,12 @@
     }
 
     /* ---------- Opções de resposta ---------- */
-    .options { display: flex; flex-direction: column; gap: 8px; }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
     .option {
       display: flex;
       align-items: center;
@@ -251,30 +309,37 @@
       background: var(--white);
       user-select: none;
     }
+
     .option:hover {
       border-color: var(--primary-2);
       background: #FAF5FF;
       transform: translateY(-1px);
     }
+
     .option.is-selected {
       border-color: var(--primary);
       background: linear-gradient(135deg, #F5F0FF, #FFF);
-      box-shadow: 0 4px 14px rgba(124,58,237,.18);
+      box-shadow: 0 4px 14px rgba(124, 58, 237, .18);
     }
+
     .option .radio {
-      width: 22px; height: 22px;
+      width: 22px;
+      height: 22px;
       border: 2px solid var(--muted-soft);
       border-radius: 50%;
       flex-shrink: 0;
       position: relative;
       transition: all .18s ease;
     }
+
     .option.is-selected .radio {
       border-color: var(--primary);
     }
+
     .option.is-selected .radio::after {
       content: '';
-      position: absolute; inset: 3px;
+      position: absolute;
+      inset: 3px;
       background: var(--primary);
       border-radius: 50%;
     }
@@ -285,6 +350,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 10px;
     }
+
     .visual-card {
       padding: 18px 12px;
       border: 1.5px solid var(--line);
@@ -295,27 +361,32 @@
       background: var(--white);
       user-select: none;
     }
+
     .visual-card:hover {
       transform: translateY(-3px);
       border-color: var(--primary-2);
-      box-shadow: 0 10px 24px rgba(124,58,237,.18);
+      box-shadow: 0 10px 24px rgba(124, 58, 237, .18);
     }
+
     .visual-card.is-selected {
       border-color: var(--primary);
       background: linear-gradient(160deg, #F5F0FF, #FFF);
       box-shadow: var(--shadow-pop);
     }
+
     .visual-card .ico {
       font-size: 32px;
       margin-bottom: 8px;
-      filter: drop-shadow(0 4px 8px rgba(0,0,0,.08));
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .08));
     }
+
     .visual-card .vc-title {
       font-size: 13px;
       font-weight: 700;
       color: var(--ink);
       margin-bottom: 4px;
     }
+
     .visual-card .vc-sub {
       font-size: 11.5px;
       color: var(--muted);
@@ -337,13 +408,35 @@
       width: 100%;
       letter-spacing: .01em;
     }
+
     .btn-primary {
       background: linear-gradient(135deg, var(--primary), var(--primary-2));
       color: white;
       box-shadow: var(--shadow-pop);
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(124,58,237,.45); }
-    .btn-primary:disabled { opacity: .45; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(124, 58, 237, .45);
+    }
+
+    .btn-primary:disabled {
+      opacity: .45;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* Pulse de atenção quando o lead acabou de responder */
+    .btn.cta-attention {
+      animation: ctaAttn 1.2s cubic-bezier(.4,0,.2,1) 1;
+    }
+    @keyframes ctaAttn {
+      0%   { transform: scale(1);    box-shadow: 0 0 0 0 rgba(124,58,237,0); }
+      30%  { transform: scale(1.04); box-shadow: 0 0 0 6px rgba(124,58,237,.4); }
+      60%  { transform: scale(1.02); box-shadow: 0 0 0 12px rgba(124,58,237,0); }
+      100% { transform: scale(1);    box-shadow: 0 0 0 0 rgba(124,58,237,0); }
+    }
 
     .btn-gold {
       background: linear-gradient(135deg, var(--gold), var(--gold-2));
@@ -352,11 +445,27 @@
       font-size: 16px;
       padding: 16px 22px;
     }
-    .btn-gold:hover { transform: translateY(-2px); }
-    .btn-gold.pulse { animation: pulseGold 1.8s ease infinite; }
+
+    .btn-gold:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold.pulse {
+      animation: pulseGold 1.8s ease infinite;
+    }
+
     @keyframes pulseGold {
-      0%, 100% { transform: scale(1); box-shadow: 0 10px 30px rgba(245,158,11,.45); }
-      50%      { transform: scale(1.025); box-shadow: 0 16px 42px rgba(245,158,11,.65); }
+
+      0%,
+      100% {
+        transform: scale(1);
+        box-shadow: 0 10px 30px rgba(245, 158, 11, .45);
+      }
+
+      50% {
+        transform: scale(1.025);
+        box-shadow: 0 16px 42px rgba(245, 158, 11, .65);
+      }
     }
 
     .btn-ghost {
@@ -366,7 +475,10 @@
       padding: 10px 14px;
       width: auto;
     }
-    .btn-ghost:hover { color: var(--ink-2); }
+
+    .btn-ghost:hover {
+      color: var(--ink-2);
+    }
 
     .actions-row {
       display: flex;
@@ -375,28 +487,43 @@
       gap: 10px;
       margin-top: 18px;
     }
-    .actions-row .btn-primary { flex: 1; }
+
+    .actions-row .btn-primary {
+      flex: 1;
+    }
 
     /* ---------- Welcome (passo 1) ---------- */
     .welcome {
       text-align: center;
       padding: 28px 6px 12px;
     }
+
     .welcome .trophy {
-      width: 84px; height: 84px;
+      width: 84px;
+      height: 84px;
       margin: 0 auto 18px;
       background: radial-gradient(circle at 35% 30%, var(--gold-2) 0%, var(--gold) 50%, #B45309 100%);
       border-radius: 50%;
-      display: grid; place-items: center;
+      display: grid;
+      place-items: center;
       font-size: 44px;
-      box-shadow: 0 0 0 6px rgba(245,158,11,.18), 0 18px 40px rgba(245,158,11,.45);
+      box-shadow: 0 0 0 6px rgba(245, 158, 11, .18), 0 18px 40px rgba(245, 158, 11, .45);
       animation: trophyFloat 3.4s ease-in-out infinite;
       position: relative;
     }
+
     @keyframes trophyFloat {
-      0%, 100% { transform: translateY(0) rotate(-2deg); }
-      50%      { transform: translateY(-6px) rotate(2deg); }
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-2deg);
+      }
+
+      50% {
+        transform: translateY(-6px) rotate(2deg);
+      }
     }
+
     .welcome h1 {
       font-size: 26px;
       font-weight: 900;
@@ -405,18 +532,21 @@
       letter-spacing: -.02em;
       margin-bottom: 12px;
     }
+
     .welcome h1 .hl {
       background: linear-gradient(135deg, var(--primary), var(--gold));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
+
     .welcome p {
       font-size: 14.5px;
       line-height: 1.55;
       color: var(--ink-2);
       margin-bottom: 18px;
     }
+
     .seal-row {
       display: flex;
       justify-content: center;
@@ -424,6 +554,7 @@
       flex-wrap: wrap;
       margin-bottom: 18px;
     }
+
     .seal {
       display: inline-flex;
       align-items: center;
@@ -436,6 +567,7 @@
       border-radius: 999px;
       border: 1px solid var(--line);
     }
+
     .social-proof {
       background: linear-gradient(135deg, #FFFBEB, #FEF3C7);
       border: 1px solid #FCD34D;
@@ -445,7 +577,13 @@
       font-size: 13px;
       color: #92400E;
     }
-    .social-proof strong { color: #78350F; font-size: 18px; font-weight: 800; }
+
+    .social-proof strong {
+      color: #78350F;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
     .avatars {
       display: inline-flex;
       align-items: center;
@@ -453,19 +591,31 @@
       vertical-align: middle;
       margin-right: 6px;
     }
+
     .avatars .av {
-      width: 22px; height: 22px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       border: 2px solid white;
-      display: grid; place-items: center;
+      display: grid;
+      place-items: center;
       color: white;
       font-size: 10px;
       font-weight: 800;
       margin-right: -7px;
     }
-    .av-1 { background: linear-gradient(135deg, #F472B6, #EC4899); }
-    .av-2 { background: linear-gradient(135deg, #60A5FA, #3B82F6); }
-    .av-3 { background: linear-gradient(135deg, #34D399, #10B981); }
+
+    .av-1 {
+      background: linear-gradient(135deg, #F472B6, #EC4899);
+    }
+
+    .av-2 {
+      background: linear-gradient(135deg, #60A5FA, #3B82F6);
+    }
+
+    .av-3 {
+      background: linear-gradient(135deg, #34D399, #10B981);
+    }
 
     .welcome-disclaimer {
       font-size: 11px;
@@ -481,14 +631,26 @@
       font-weight: 800;
       font-size: 18px;
       color: var(--gold);
-      text-shadow: 0 2px 6px rgba(0,0,0,.4);
+      text-shadow: 0 2px 6px rgba(0, 0, 0, .4);
       animation: xpRise 1.2s ease-out forwards;
       z-index: 9000;
     }
+
     @keyframes xpRise {
-      0%   { opacity: 0; transform: translate(-50%, 0) scale(.8); }
-      20%  { opacity: 1; transform: translate(-50%, -10px) scale(1.1); }
-      100% { opacity: 0; transform: translate(-50%, -80px) scale(1); }
+      0% {
+        opacity: 0;
+        transform: translate(-50%, 0) scale(.8);
+      }
+
+      20% {
+        opacity: 1;
+        transform: translate(-50%, -10px) scale(1.1);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -80px) scale(1);
+      }
     }
 
     /* ---------- Toast ---------- */
@@ -503,36 +665,61 @@
       z-index: 9500;
       pointer-events: none;
     }
+
     .toast {
-      background: rgba(15,12,41,.95);
+      background: rgba(15, 12, 41, .95);
       backdrop-filter: blur(12px);
       color: white;
       padding: 10px 16px;
       border-radius: 12px;
       font-size: 13px;
       font-weight: 600;
-      box-shadow: 0 10px 30px rgba(0,0,0,.4);
-      border: 1px solid rgba(245,158,11,.5);
-      animation: toastIn .4s cubic-bezier(.2,1.4,.4,1), toastOut .4s ease 3.2s forwards;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+      border: 1px solid rgba(245, 158, 11, .5);
+      animation: toastIn .4s cubic-bezier(.2, 1.4, .4, 1), toastOut .4s ease 3.2s forwards;
     }
+
     @keyframes toastIn {
-      from { opacity: 0; transform: translateY(-12px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+
     @keyframes toastOut {
-      to { opacity: 0; transform: translateY(-12px); }
+      to {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
     }
 
     /* ---------- Level-up modal ---------- */
     .levelup-overlay {
-      position: fixed; inset: 0;
-      background: rgba(15,12,41,.85);
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 12, 41, .85);
       backdrop-filter: blur(8px);
-      display: grid; place-items: center;
+      display: grid;
+      place-items: center;
       z-index: 10000;
       animation: fadeIn .25s ease;
     }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
     .levelup-modal {
       background: linear-gradient(160deg, #FFF, #FAF5FF);
       border-radius: 24px;
@@ -540,24 +727,43 @@
       text-align: center;
       max-width: 340px;
       width: calc(100% - 32px);
-      box-shadow: 0 30px 80px rgba(124,58,237,.5), 0 0 0 4px var(--gold);
+      box-shadow: 0 30px 80px rgba(124, 58, 237, .5), 0 0 0 4px var(--gold);
       color: var(--ink);
-      animation: levelPop .55s cubic-bezier(.2,1.4,.4,1);
+      animation: levelPop .55s cubic-bezier(.2, 1.4, .4, 1);
     }
+
     @keyframes levelPop {
-      0%   { transform: scale(.4); opacity: 0; }
-      60%  { transform: scale(1.08); }
-      100% { transform: scale(1); opacity: 1; }
+      0% {
+        transform: scale(.4);
+        opacity: 0;
+      }
+
+      60% {
+        transform: scale(1.08);
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
+
     .levelup-modal .ico {
       font-size: 60px;
       margin-bottom: 8px;
       animation: spinSlow 2s ease;
     }
+
     @keyframes spinSlow {
-      from { transform: rotate(-180deg) scale(.5); }
-      to   { transform: rotate(0deg) scale(1); }
+      from {
+        transform: rotate(-180deg) scale(.5);
+      }
+
+      to {
+        transform: rotate(0deg) scale(1);
+      }
     }
+
     .levelup-modal h2 {
       font-size: 13px;
       font-weight: 700;
@@ -566,6 +772,7 @@
       color: var(--gold);
       margin-bottom: 6px;
     }
+
     .levelup-modal h3 {
       font-size: 26px;
       font-weight: 900;
@@ -576,6 +783,7 @@
       background-clip: text;
       color: transparent;
     }
+
     .levelup-modal p {
       font-size: 14px;
       color: var(--muted);
@@ -589,16 +797,26 @@
       z-index: 9999;
       overflow: hidden;
     }
+
     .confetti {
       position: absolute;
-      width: 8px; height: 14px;
+      width: 8px;
+      height: 14px;
       top: -20px;
       animation: confettiFall linear forwards;
       border-radius: 1px;
     }
+
     @keyframes confettiFall {
-      0%   { transform: translateY(0) rotate(0); opacity: 1; }
-      100% { transform: translateY(110vh) rotate(720deg); opacity: .5; }
+      0% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: .5;
+      }
     }
 
     /* ---------- Análise (passo 8) ---------- */
@@ -606,29 +824,52 @@
       text-align: center;
       padding: 12px 4px;
     }
+
     .analysis-spinner {
-      width: 80px; height: 80px;
+      width: 80px;
+      height: 80px;
       margin: 0 auto 18px;
       position: relative;
     }
+
     .analysis-spinner::before {
       content: '';
-      position: absolute; inset: 0;
-      border: 4px solid rgba(124,58,237,.15);
+      position: absolute;
+      inset: 0;
+      border: 4px solid rgba(124, 58, 237, .15);
       border-top-color: var(--primary);
       border-right-color: var(--gold);
       border-radius: 50%;
       animation: spin 1.1s linear infinite;
     }
+
     .analysis-spinner::after {
       content: '🔍';
-      position: absolute; inset: 0;
-      display: grid; place-items: center;
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
       font-size: 28px;
       animation: pulse 1.4s ease-in-out infinite;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.12);
+      }
+    }
 
     .analysis h2 {
       font-size: 20px;
@@ -636,16 +877,19 @@
       margin-bottom: 6px;
       color: var(--ink);
     }
+
     .analysis-subtitle {
       font-size: 13px;
       color: var(--muted);
       margin-bottom: 22px;
     }
+
     .analysis-checklist {
       text-align: left;
       list-style: none;
       padding: 0;
     }
+
     .analysis-checklist li {
       display: flex;
       align-items: center;
@@ -657,24 +901,40 @@
       opacity: .35;
       transition: opacity .3s ease;
     }
-    .analysis-checklist li:last-child { border-bottom: 0; }
-    .analysis-checklist li.is-active { opacity: 1; }
-    .analysis-checklist li.is-done { opacity: 1; color: var(--success); font-weight: 600; }
+
+    .analysis-checklist li:last-child {
+      border-bottom: 0;
+    }
+
+    .analysis-checklist li.is-active {
+      opacity: 1;
+    }
+
+    .analysis-checklist li.is-done {
+      opacity: 1;
+      color: var(--success);
+      font-weight: 600;
+    }
+
     .check-ic {
-      width: 22px; height: 22px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       background: var(--line);
-      display: grid; place-items: center;
+      display: grid;
+      place-items: center;
       flex-shrink: 0;
       font-size: 12px;
       color: white;
       font-weight: 800;
       transition: background .3s ease;
     }
+
     .analysis-checklist li.is-active .check-ic {
       background: var(--primary);
       animation: pulse 1s ease-in-out infinite;
     }
+
     .analysis-checklist li.is-done .check-ic {
       background: var(--success);
     }
@@ -683,6 +943,7 @@
     .tap-game {
       text-align: center;
     }
+
     .tap-board {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -693,6 +954,7 @@
       margin-left: auto;
       margin-right: auto;
     }
+
     .tap-cell {
       background: var(--bg-soft);
       border-radius: 14px;
@@ -704,19 +966,28 @@
       position: relative;
       user-select: none;
     }
+
     .tap-cell.is-active {
       background: linear-gradient(135deg, var(--gold), var(--gold-2));
       animation: tapPulse .55s ease infinite alternate;
       box-shadow: var(--shadow-gold);
     }
+
     .tap-cell.is-hit {
       background: var(--success);
       transform: scale(.85);
     }
+
     @keyframes tapPulse {
-      from { transform: scale(1); }
-      to   { transform: scale(1.06); }
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.06);
+      }
     }
+
     .tap-info {
       display: flex;
       justify-content: space-around;
@@ -725,8 +996,14 @@
       font-weight: 700;
       color: var(--ink-2);
     }
-    .tap-info .timer { color: var(--danger); }
-    .tap-info .score { color: var(--gold); }
+
+    .tap-info .timer {
+      color: var(--danger);
+    }
+
+    .tap-info .score {
+      color: var(--gold);
+    }
 
     /* ---------- Pré-revelação (passo 10) ---------- */
     .preview-list {
@@ -735,6 +1012,7 @@
       gap: 10px;
       margin: 16px 0;
     }
+
     .preview-item {
       display: flex;
       align-items: center;
@@ -744,35 +1022,47 @@
       border-radius: 14px;
       background: var(--white);
     }
+
     .preview-item.is-locked {
       filter: blur(2.5px) saturate(.7);
       opacity: .65;
       pointer-events: none;
       position: relative;
     }
+
     .preview-ico {
-      width: 44px; height: 44px;
+      width: 44px;
+      height: 44px;
       border-radius: 12px;
       background: linear-gradient(135deg, #F5F0FF, #FAF5FF);
-      display: grid; place-items: center;
+      display: grid;
+      place-items: center;
       font-size: 22px;
       flex-shrink: 0;
     }
+
     .preview-item.is-revealed .preview-ico {
       background: linear-gradient(135deg, var(--gold), var(--gold-2));
     }
-    .preview-text { flex: 1; min-width: 0; }
+
+    .preview-text {
+      flex: 1;
+      min-width: 0;
+    }
+
     .preview-text h4 {
       font-size: 14px;
       font-weight: 800;
       color: var(--ink);
       margin-bottom: 2px;
     }
+
     .preview-text p {
       font-size: 12.5px;
       color: var(--muted);
       line-height: 1.4;
     }
+
     .preview-item .lock-tag {
       font-size: 11px;
       font-weight: 700;
@@ -783,7 +1073,10 @@
     }
 
     /* ---------- Captura email (passo 11) ---------- */
-    .field { margin-bottom: 12px; }
+    .field {
+      margin-bottom: 12px;
+    }
+
     .field label {
       display: block;
       font-size: 12px;
@@ -792,6 +1085,7 @@
       margin-bottom: 5px;
       letter-spacing: .02em;
     }
+
     .field input[type="text"],
     .field input[type="email"] {
       width: 100%;
@@ -803,11 +1097,13 @@
       background: var(--white);
       transition: all .18s ease;
     }
+
     .field input:focus {
       outline: none;
       border-color: var(--primary);
-      box-shadow: 0 0 0 4px rgba(124,58,237,.12);
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, .12);
     }
+
     .checkbox-row {
       display: flex;
       gap: 10px;
@@ -817,12 +1113,15 @@
       color: var(--ink-2);
       line-height: 1.45;
     }
+
     .checkbox-row input[type="checkbox"] {
       margin-top: 2px;
-      width: 16px; height: 16px;
+      width: 16px;
+      height: 16px;
       accent-color: var(--primary);
       flex-shrink: 0;
     }
+
     .secure-row {
       display: flex;
       gap: 12px;
@@ -832,6 +1131,7 @@
       padding-top: 12px;
       border-top: 1px solid var(--line-soft);
     }
+
     .secure-row span {
       font-size: 11px;
       color: var(--muted);
@@ -842,12 +1142,17 @@
     }
 
     /* ---------- Reveal final (passo 12) ---------- */
-    .reveal-host { text-align: center; padding: 6px 0; }
+    .reveal-host {
+      text-align: center;
+      padding: 6px 0;
+    }
+
     .reveal-host .crown {
       font-size: 56px;
       margin-bottom: 10px;
       animation: trophyFloat 3s ease-in-out infinite;
     }
+
     .reveal-host h2 {
       font-size: 22px;
       font-weight: 900;
@@ -855,16 +1160,21 @@
       letter-spacing: -.01em;
       margin-bottom: 8px;
     }
+
     .reveal-host h2 .hl {
       background: linear-gradient(135deg, var(--primary), var(--gold));
-      -webkit-background-clip: text; background-clip: text; color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
-    .reveal-host > p {
+
+    .reveal-host>p {
       font-size: 13.5px;
       color: var(--ink-2);
       margin-bottom: 18px;
       line-height: 1.5;
     }
+
     .matches {
       display: flex;
       flex-direction: column;
@@ -872,6 +1182,7 @@
       margin-bottom: 20px;
       text-align: left;
     }
+
     .match-card {
       padding: 14px 16px;
       border-radius: 16px;
@@ -880,37 +1191,70 @@
       display: flex;
       gap: 12px;
       align-items: center;
-      animation: matchSlide .55s cubic-bezier(.2,1.2,.4,1) backwards;
+      animation: matchSlide .55s cubic-bezier(.2, 1.2, .4, 1) backwards;
     }
-    .match-card:nth-child(1) { animation-delay: .1s; }
-    .match-card:nth-child(2) { animation-delay: .25s; }
-    .match-card:nth-child(3) { animation-delay: .4s; }
-    .match-card:nth-child(4) { animation-delay: .55s; }
-    .match-card:nth-child(5) { animation-delay: .7s; }
+
+    .match-card:nth-child(1) {
+      animation-delay: .1s;
+    }
+
+    .match-card:nth-child(2) {
+      animation-delay: .25s;
+    }
+
+    .match-card:nth-child(3) {
+      animation-delay: .4s;
+    }
+
+    .match-card:nth-child(4) {
+      animation-delay: .55s;
+    }
+
+    .match-card:nth-child(5) {
+      animation-delay: .7s;
+    }
+
     @keyframes matchSlide {
-      from { transform: translateY(20px); opacity: 0; }
-      to   { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
+
     .match-card .ico {
-      width: 46px; height: 46px;
+      width: 46px;
+      height: 46px;
       border-radius: 12px;
       background: linear-gradient(135deg, var(--gold), var(--gold-2));
-      display: grid; place-items: center;
+      display: grid;
+      place-items: center;
       font-size: 22px;
       flex-shrink: 0;
     }
-    .match-card .body { flex: 1; min-width: 0; }
+
+    .match-card .body {
+      flex: 1;
+      min-width: 0;
+    }
+
     .match-card h4 {
       font-size: 14.5px;
       font-weight: 800;
       color: var(--ink);
       margin-bottom: 2px;
     }
+
     .match-card p {
       font-size: 12.5px;
       color: var(--ink-2);
       line-height: 1.4;
     }
+
     .match-card .score-tag {
       font-size: 10.5px;
       font-weight: 800;
@@ -921,7 +1265,11 @@
       display: inline-block;
     }
 
-    .reveal-cta-row { display: flex; flex-direction: column; gap: 8px; }
+    .reveal-cta-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
 
     /* ---------- Footer compliance ---------- */
     .footer-compliance {
@@ -929,11 +1277,98 @@
       margin: 22px auto 0;
       text-align: center;
       font-size: 11px;
-      color: rgba(255,255,255,.55);
+      color: rgba(255, 255, 255, .55);
       line-height: 1.55;
       padding: 0 8px;
     }
-    .footer-compliance a { color: rgba(255,255,255,.75); text-decoration: underline; }
+
+    .footer-compliance a {
+      color: rgba(255, 255, 255, .75);
+      text-decoration: underline;
+    }
+
+    /* ---------- Artigo editorial dentro do passo ---------- */
+    .article-block {
+      margin: 18px 0 6px;
+      padding: 14px 14px 16px;
+      background: linear-gradient(135deg, #FFFBEB, #FFF);
+      border-left: 3px solid var(--gold);
+      border-radius: 8px 12px 12px 8px;
+    }
+
+    .article-block .article-eyebrow {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #B45309;
+      margin-bottom: 6px;
+    }
+
+    .article-block h3 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 8px;
+      line-height: 1.32;
+      letter-spacing: -.005em;
+    }
+
+    .article-block p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--ink-2);
+      margin-bottom: 8px;
+    }
+
+    .article-block p:last-of-type {
+      margin-bottom: 10px;
+    }
+
+    .article-block .tips-tag {
+      display: inline-block;
+      font-size: 10.5px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--success);
+      margin: 4px 0 6px;
+    }
+
+    .article-block ul.tips {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .article-block ul.tips li {
+      position: relative;
+      padding: 6px 0 6px 22px;
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--ink-2);
+      border-bottom: 1px dashed rgba(0, 0, 0, .06);
+    }
+
+    .article-block ul.tips li:last-child {
+      border-bottom: 0;
+    }
+
+    .article-block ul.tips li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--success);
+      color: white;
+      font-size: 10px;
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+    }
 
     /* ---------- Disclaimer interno ---------- */
     .inline-disclaimer {
@@ -947,7 +1382,581 @@
       border-radius: 10px;
     }
 
-    /* Adsense holder */
+    /* ---------- Painel de análise ao vivo ---------- */
+    .live-panel {
+      position: fixed;
+      right: 20px;
+      top: 80px;
+      width: 240px;
+      background: linear-gradient(180deg, #1A1A2E, #0F0C29);
+      border: 1px solid rgba(124, 58, 237, .35);
+      border-radius: 16px;
+      padding: 14px;
+      color: white;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .4);
+      z-index: 800;
+      max-height: calc(100vh - 120px);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .live-panel h4 {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .live-panel h4 .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--success);
+      border-radius: 50%;
+      animation: livePulse 1.4s ease-in-out infinite;
+      box-shadow: 0 0 0 0 var(--success);
+    }
+
+    @keyframes livePulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, .6);
+      }
+
+      50% {
+        box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+      }
+    }
+
+    .live-counters {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .live-counter {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: 10px;
+      padding: 8px 10px;
+    }
+
+    .live-counter .num {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1.05;
+      transition: color .3s ease;
+    }
+
+    .live-counter .num.flash {
+      color: white;
+      text-shadow: 0 0 12px var(--gold);
+    }
+
+    .live-counter .lbl {
+      font-size: 10px;
+      color: rgba(255, 255, 255, .6);
+      letter-spacing: .04em;
+      margin-top: 2px;
+    }
+
+    .live-feed {
+      flex: 1;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      max-height: 220px;
+    }
+
+    .live-feed::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .live-feed::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, .15);
+      border-radius: 4px;
+    }
+
+    .feed-item {
+      background: rgba(255, 255, 255, .04);
+      border-left: 2px solid var(--primary);
+      border-radius: 6px;
+      padding: 6px 8px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: rgba(255, 255, 255, .85);
+      animation: feedSlide .35s ease;
+    }
+
+    .feed-item.discovery {
+      border-left-color: var(--primary);
+    }
+
+    .feed-item.compatibility {
+      border-left-color: var(--success);
+    }
+
+    .feed-item.urgency {
+      border-left-color: var(--danger);
+    }
+
+    .feed-item.vip {
+      border-left-color: var(--gold);
+    }
+
+    .feed-item .feed-time {
+      font-size: 9px;
+      color: rgba(255, 255, 255, .4);
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    @keyframes feedSlide {
+      from {
+        transform: translateX(-8px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .live-scan {
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, .55);
+      padding-top: 6px;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .live-scan .scan-bar {
+      height: 4px;
+      background: rgba(255, 255, 255, .08);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 4px;
+    }
+
+    .live-scan .scan-bar>span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--gold), var(--success));
+      transition: width .8s ease;
+    }
+
+    .live-scan .scan-bank {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* Chips de contadores compactos (visíveis no mobile) */
+    .live-panel-chips {
+      display: none;
+      gap: 6px;
+      padding: 0 14px 10px;
+      overflow-x: auto;
+      flex-shrink: 0;
+      scrollbar-width: none;
+    }
+
+    .live-panel-chips::-webkit-scrollbar {
+      display: none;
+    }
+
+    .live-chip {
+      background: rgba(255, 255, 255, .07);
+      color: white;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 999px;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, .08);
+      white-space: nowrap;
+      transition: all .25s ease;
+    }
+
+    .live-chip strong {
+      color: var(--gold);
+      margin-right: 4px;
+      font-weight: 900;
+    }
+
+    .live-chip.flash strong {
+      color: white;
+      text-shadow: 0 0 10px var(--gold);
+    }
+
+    @media (max-width: 900px) {
+      .live-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        max-height: 88px;
+        border-radius: 0 0 18px 18px;
+        transition: max-height .4s cubic-bezier(.4, 0, .2, 1);
+        padding: 0;
+        gap: 0;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .4);
+      }
+
+      .live-panel.expanded {
+        max-height: 78vh;
+        padding: 0 0 14px;
+      }
+
+      .live-panel-handle {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 14px;
+        cursor: pointer;
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+        flex-shrink: 0;
+        background: rgba(0, 0, 0, .18);
+      }
+
+      .live-panel-handle .arr {
+        transition: transform .3s ease;
+        font-size: 10px;
+        opacity: .7;
+      }
+
+      .live-panel.expanded .live-panel-handle .arr {
+        transform: rotate(180deg);
+      }
+
+      /* Vista colapsada: handle + chips compactos */
+      .live-panel-chips {
+        display: flex;
+      }
+
+      .live-panel.expanded .live-panel-chips {
+        display: none;
+      }
+
+      /* Vista expandida: esconde chips, mostra h4/counters/feed/scan */
+      .live-panel:not(.expanded)>h4,
+      .live-panel:not(.expanded)>.live-counters,
+      .live-panel:not(.expanded)>.live-feed,
+      .live-panel:not(.expanded)>.live-scan {
+        display: none;
+      }
+
+      .live-panel.expanded>h4,
+      .live-panel.expanded>.live-counters,
+      .live-panel.expanded>.live-feed,
+      .live-panel.expanded>.live-scan {
+        display: flex;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .live-panel.expanded>h4 {
+        display: flex;
+        padding-top: 10px;
+      }
+
+      .live-panel.expanded>.live-counters {
+        display: grid;
+      }
+
+      .live-panel.flash {
+        animation: panelFlashTop .8s ease;
+      }
+
+      @keyframes panelFlashTop {
+
+        0%,
+        100% {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, .4);
+        }
+
+        50% {
+          box-shadow: 0 12px 30px rgba(16, 185, 129, .7);
+        }
+      }
+
+      /* Espaço pro shell não ficar embaixo do painel */
+      .funnel-shell {
+        padding-top: 100px !important;
+      }
+    }
+
+    @media (min-width: 901px) {
+      .live-panel-handle {
+        display: none;
+      }
+
+      .live-panel-chips {
+        display: none !important;
+      }
+    }
+
+    /* ---------- Toast contextual grande ---------- */
+    .toast-ctx {
+      position: fixed;
+      top: 90px;
+      right: 20px;
+      width: 300px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, .28), 0 0 0 1px rgba(0, 0, 0, .04);
+      overflow: hidden;
+      z-index: 1500;
+      animation: ctxIn .42s cubic-bezier(.2, 1.2, .4, 1);
+      color: var(--ink);
+    }
+
+    .toast-ctx.discovery {
+      border-left: 4px solid var(--primary);
+    }
+
+    .toast-ctx.compatibility {
+      border-left: 4px solid var(--success);
+    }
+
+    .toast-ctx.urgency {
+      border-left: 4px solid var(--danger);
+    }
+
+    .toast-ctx.vip {
+      border-left: 4px solid var(--gold);
+    }
+
+    .toast-ctx .toast-ctx-body {
+      display: flex;
+      gap: 12px;
+      padding: 12px 14px;
+    }
+
+    .toast-ctx .toast-ctx-ico {
+      font-size: 28px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .toast-ctx .toast-ctx-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .toast-ctx h5 {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 2px;
+      line-height: 1.3;
+    }
+
+    .toast-ctx p {
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .toast-ctx .toast-ctx-mini {
+      margin-top: 6px;
+      height: 4px;
+      background: var(--line-soft);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .toast-ctx .toast-ctx-mini>span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--success));
+      transition: width 1s ease;
+      border-radius: 4px;
+    }
+
+    .toast-ctx .toast-ctx-pct {
+      font-size: 9.5px;
+      color: var(--muted-soft);
+      margin-top: 3px;
+      text-align: right;
+    }
+
+    .toast-ctx .toast-ctx-bar {
+      height: 3px;
+      background: var(--line-soft);
+    }
+
+    .toast-ctx .toast-ctx-bar>span {
+      display: block;
+      height: 100%;
+      background: var(--primary);
+      animation: ctxDrain 5s linear forwards;
+    }
+
+    .toast-ctx.compatibility .toast-ctx-bar>span {
+      background: var(--success);
+    }
+
+    .toast-ctx.urgency .toast-ctx-bar>span {
+      background: var(--danger);
+    }
+
+    .toast-ctx.vip .toast-ctx-bar>span {
+      background: var(--gold);
+    }
+
+    .toast-ctx.closing {
+      animation: ctxOut .3s ease forwards;
+    }
+
+    @keyframes ctxIn {
+      from {
+        transform: translateX(120%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes ctxOut {
+      to {
+        transform: translateX(120%);
+        opacity: 0;
+      }
+    }
+
+    @keyframes ctxDrain {
+      from {
+        width: 100%;
+      }
+
+      to {
+        width: 0%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .toast-ctx {
+        top: 100px;
+        left: 12px;
+        right: 12px;
+        width: auto;
+      }
+    }
+
+    /* ---------- AdSense slot zones ---------- */
+    .ad-zone {
+      width: 100%;
+      max-width: 480px;
+      margin: 12px auto;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Anchor sticky — sempre visível no rodapé enquanto rola */
+    .ad-anchor {
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 1100;
+      background: white;
+      border-top: 1px solid var(--line);
+      box-shadow: 0 -8px 24px rgba(0, 0, 0, .18);
+      padding: 4px 12px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform .35s cubic-bezier(.4, 0, .2, 1);
+    }
+    .ad-anchor.is-hidden { transform: translateY(110%); }
+    .ad-anchor-label {
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin: 2px 0 4px;
+      font-weight: 700;
+    }
+    .ad-anchor ins.adsbygoogle {
+      display: block;
+      width: 100%;
+      max-width: 728px;
+      min-height: 60px;
+      max-height: 100px;
+    }
+    .ad-anchor-close {
+      position: absolute;
+      top: -20px;
+      right: 10px;
+      background: rgba(15, 12, 41, .85);
+      color: white;
+      border: none;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      font-size: 18px;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+      display: grid;
+      place-items: center;
+      padding: 0;
+    }
+    .ad-zone-label {
+      font-size: 9.5px;
+      color: rgba(255,255,255,.4);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+    .ad-zone ins.adsbygoogle {
+      display: block;
+      width: 100%;
+      min-height: 90px;
+      background: rgba(255,255,255,.02);
+      border-radius: 12px;
+    }
+    .ad-inline {
+      width: 100%;
+      margin: 14px 0;
+      min-height: 100px;
+    }
+    .ad-inline ins.adsbygoogle {
+      display: block;
+      width: 100%;
+      min-height: 100px;
+      background: rgba(0,0,0,.02);
+      border-radius: 10px;
+    }
+    .ad-inline-label {
+      font-size: 9.5px;
+      color: var(--muted-soft);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    /* Adsense holder (legado) */
     .ad-holder {
       width: 100%;
       max-width: 480px;
@@ -957,17 +1966,160 @@
 
     /* ---------- Responsivo ---------- */
     @media (max-width: 480px) {
-      .funnel-shell { padding: 16px 12px 64px; }
-      .card { padding: 20px 18px 22px; border-radius: 20px; }
-      .welcome h1 { font-size: 23px; }
-      .step-title { font-size: 20px; }
-      .visual-card .ico { font-size: 28px; }
-      .tap-board { max-width: 260px; }
+      .funnel-shell {
+        padding: 100px 14px 80px;
+      }
+
+      .card {
+        padding: 22px 20px 24px;
+        border-radius: 20px;
+      }
+
+      .top-mark {
+        display: none;
+      }
+
+      .welcome h1 {
+        font-size: 22px;
+        line-height: 1.22;
+      }
+
+      .welcome p {
+        font-size: 14px;
+      }
+
+      .step-title {
+        font-size: 19px;
+        line-height: 1.3;
+      }
+
+      .step-lead {
+        font-size: 14px;
+      }
+
+      .visual-card {
+        padding: 16px 10px;
+      }
+
+      .visual-card .ico {
+        font-size: 30px;
+        margin-bottom: 6px;
+      }
+
+      .visual-card .vc-title {
+        font-size: 13.5px;
+      }
+
+      .visual-card .vc-sub {
+        font-size: 11px;
+      }
+
+      .tap-board {
+        max-width: 240px;
+      }
+
+      /* Áreas de toque mais confortáveis */
+      .option {
+        padding: 16px 14px;
+        min-height: 56px;
+      }
+
+      .option .text {
+        font-size: 14.5px;
+        line-height: 1.35;
+      }
+
+      .btn {
+        min-height: 52px;
+        padding: 14px 18px;
+        font-size: 15.5px;
+      }
+
+      .btn-gold {
+        padding: 16px 18px;
+        font-size: 16px;
+      }
+
+      .field input[type="text"],
+      .field input[type="email"] {
+        padding: 14px 14px;
+        min-height: 52px;
+        font-size: 16px;
+      }
+
+      .checkbox-row {
+        padding: 14px 0;
+        font-size: 13px;
+      }
+
+      .checkbox-row input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-top: 1px;
+      }
+
+      /* Trophy menor pra welcome caber sem rolar muito */
+      .welcome .trophy {
+        width: 70px;
+        height: 70px;
+        font-size: 36px;
+        margin-bottom: 14px;
+      }
+
+      .seal {
+        font-size: 11px;
+        padding: 5px 9px;
+      }
+
+      /* Article block compacto */
+      .article-block {
+        padding: 12px 12px 14px;
+      }
+
+      .article-block h3 {
+        font-size: 14px;
+      }
+
+      .article-block p {
+        font-size: 12.5px;
+      }
+
+      .article-block ul.tips li {
+        font-size: 12px;
+      }
+
+      /* Reveal final */
+      .match-card {
+        padding: 12px 14px;
+      }
+
+      .match-card h4 {
+        font-size: 14px;
+      }
+
+      .match-card p {
+        font-size: 12px;
+      }
+
+      /* Footer compliance menos pesado no mobile */
+      .footer-compliance {
+        font-size: 10.5px;
+        padding: 0 6px;
+      }
     }
+
     @media (min-width: 720px) {
-      .card { padding: 30px 28px 28px; }
-      .welcome h1 { font-size: 30px; }
-      .step-title { font-size: 24px; }
+      .card {
+        padding: 30px 28px 28px;
+      }
+
+      .welcome h1 {
+        font-size: 30px;
+      }
+
+      .step-title {
+        font-size: 24px;
+      }
     }
 
     /* Acessibilidade: focus visível */
@@ -981,13 +2133,17 @@
 
     /* Reduzir movimento */
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
+
+      *,
+      *::before,
+      *::after {
         animation-duration: .001s !important;
         transition-duration: .001s !important;
       }
     }
   </style>
 </head>
+
 <body>
 
   <main class="funnel-shell">
@@ -996,6 +2152,9 @@
       <span class="dot">A</span>
       <span>Arthlens · Diagnóstico Editorial</span>
     </a>
+
+    <!-- Ad zone TOPO (renovada a cada etapa via pushState) -->
+    <div class="ad-zone" id="adZoneTop" aria-label="Publicidade"><ins class="adsbygoogle" style="display:block;min-height:90px" data-ad-client="ca-pub-2010551307643944" data-ad-slot="7083524534" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
 
     <!-- Card principal -->
     <section class="card" id="card" aria-live="polite">
@@ -1014,15 +2173,8 @@
       <div id="stepRoot"><!-- conteúdo dinâmico --></div>
     </section>
 
-    <!-- AdSense automático: o Google injeta aqui se considerar relevante -->
-    <div class="ad-holder">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-format="auto"
-           data-full-width-responsive="true"
-           data-ad-client="ca-pub-2206105468359460"
-           data-ad-slot=""></ins>
-    </div>
+    <!-- Ad zone RODAPÉ (renovada a cada etapa via pushState) -->
+    <div class="ad-zone" id="adZoneBottom" aria-label="Publicidade"><ins class="adsbygoogle" style="display:block;min-height:90px" data-ad-client="ca-pub-2010551307643944" data-ad-slot="7083524534" data-ad-format="auto" data-full-width-responsive="true"></ins></div>
 
     <p class="footer-compliance">
       <strong>Conteúdo educativo.</strong> A Arthlens não é instituição financeira nem broker.
@@ -1032,93 +2184,265 @@
     </p>
   </main>
 
+  <!-- Anchor sticky no rodapé (sempre visível enquanto rola) -->
+  <aside class="ad-anchor" id="adAnchor" aria-label="Publicidade"><button class="ad-anchor-close" id="adAnchorClose" aria-label="Fechar publicidade">×</button><span class="ad-anchor-label">Publicidade</span><ins class="adsbygoogle" style="display:block;min-height:60px" data-ad-client="ca-pub-2010551307643944" data-ad-slot="7083524534" data-ad-format="auto" data-full-width-responsive="true"></ins></aside>
+
+  <!-- Painel de análise ao vivo (oculto até a Etapa 1) -->
+  <aside class="live-panel" id="livePanel" aria-label="Análise ao vivo" hidden>
+    <div class="live-panel-handle" id="livePanelHandle">
+      <span><span class="pulse-dot"
+          style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#10B981;margin-right:6px;vertical-align:middle;"></span>Análise
+        ao vivo</span>
+      <span class="arr">▼ ver detalhes</span>
+    </div>
+    <div class="live-panel-chips" id="livePanelChips">
+      <span class="live-chip" id="chipVerified"><strong>0</strong>🏦 verificados</span>
+      <span class="live-chip" id="chipCompatible"><strong>0</strong>💳 compatíveis</span>
+      <span class="live-chip" id="chipPreApproved"><strong>0</strong>⭐ pré-elegíveis</span>
+      <span class="live-chip" id="chipVipOffers"><strong>0</strong>💎 VIP</span>
+    </div>
+    <h4><span class="pulse-dot"></span> Análise ao vivo</h4>
+    <div class="live-counters">
+      <div class="live-counter">
+        <div class="num" id="liveVerified">0</div>
+        <div class="lbl">Bancos verificados</div>
+      </div>
+      <div class="live-counter">
+        <div class="num" id="liveCompatible">0</div>
+        <div class="lbl">Cartões compatíveis</div>
+      </div>
+      <div class="live-counter">
+        <div class="num" id="livePreApproved">0</div>
+        <div class="lbl">Pré-elegíveis</div>
+      </div>
+      <div class="live-counter">
+        <div class="num" id="liveVipOffers">0</div>
+        <div class="lbl">Ofertas VIP</div>
+      </div>
+    </div>
+    <div class="live-feed" id="liveFeed" aria-live="polite"></div>
+    <div class="live-scan" id="liveScan">
+      <div>Verificando: <span class="scan-bank" id="liveScanBank">aguardando</span></div>
+      <div class="scan-bar"><span id="liveScanFill"></span></div>
+    </div>
+  </aside>
+
   <!-- Toasts / XP / Confetti hosts -->
   <div class="toast-host" id="toastHost" aria-live="polite" aria-atomic="true"></div>
+  <div class="ctx-host" id="ctxHost" aria-live="polite" aria-atomic="true"></div>
   <div class="confetti-host" id="confettiHost" aria-hidden="true"></div>
 
   <script>
-  /* =========================================================
-     Funil Gameficado · Arthlens · v1
-     ========================================================= */
-  (function () {
-    'use strict';
+    /* =========================================================
+       Funil Gameficado · Arthlens · v1
+       ========================================================= */
+    (function () {
+      'use strict';
 
-    const STORAGE_KEY = 'arthlens.funnel.v1';
+      const STORAGE_KEY = 'arthlens.funnel.v1';
 
-    /* ---------- Estado ---------- */
-    const state = loadState() || {
-      step: 0,
-      xp: 0,
-      levelIndex: 0,
-      badges: [],
-      answers: {},
-      contact: { name: '', email: '', consent: false },
-      stepStartedAt: 0,
-      tapScore: 0,
-      sessionStart: Date.now()
-    };
+      /* ---------- Estado ---------- */
+      const state = loadState() || {
+        step: 0,
+        xp: 0,
+        levelIndex: 0,
+        badges: [],
+        answers: {},
+        contact: { name: '', email: '', consent: false },
+        stepStartedAt: 0,
+        tapScore: 0,
+        sessionStart: Date.now()
+      };
 
-    const LEVELS = [
-      { name: 'Iniciante', from: 0,   icon: '🛡️' },
-      { name: 'Bronze',    from: 50,  icon: '🥉' },
-      { name: 'Prata',     from: 100, icon: '🥈' },
-      { name: 'Ouro',      from: 150, icon: '🥇' },
-      { name: 'Diamante',  from: 200, icon: '💎' }
-    ];
+      const LEVELS = [
+        { name: 'Iniciante', from: 0, icon: '🛡️' },
+        { name: 'Bronze', from: 50, icon: '🥉' },
+        { name: 'Prata', from: 100, icon: '🥈' },
+        { name: 'Ouro', from: 150, icon: '🥇' },
+        { name: 'Diamante', from: 200, icon: '💎' }
+      ];
 
-    const TOTAL_STEPS = 11;
+      const TOTAL_STEPS = 11;
 
-    /* ---------- Utilidades ---------- */
-    function saveState() {
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_) {}
-    }
-    function loadState() {
-      try {
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (!raw) return null;
-        return JSON.parse(raw);
-      } catch (_) { return null; }
-    }
-    function escapeHtml(s) {
-      return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    }
-    function $(sel, root) { return (root || document).querySelector(sel); }
-    function levelForXp(xp) {
-      let idx = 0;
-      for (let i = 0; i < LEVELS.length; i++) if (xp >= LEVELS[i].from) idx = i;
-      return idx;
-    }
-
-    /* ---------- XP & Níveis ---------- */
-    function addXp(amount, anchorEl) {
-      state.xp += amount;
-      saveState();
-      floatXp(amount, anchorEl);
-      updateHeader();
-      const newLevel = levelForXp(state.xp);
-      if (newLevel > state.levelIndex) {
-        state.levelIndex = newLevel;
-        saveState();
-        showLevelUp(LEVELS[newLevel]);
+      /* ---------- Utilidades ---------- */
+      function saveState() {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (_) { }
       }
-    }
-    function floatXp(amount, anchorEl) {
-      const node = document.createElement('div');
-      node.className = 'xp-float';
-      node.textContent = '+' + amount + ' XP';
-      const rect = (anchorEl || $('#xpCount')).getBoundingClientRect();
-      node.style.left = (rect.left + rect.width / 2) + 'px';
-      node.style.top  = (rect.top + 6) + 'px';
-      document.body.appendChild(node);
-      setTimeout(() => node.remove(), 1300);
-    }
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return null;
+          return JSON.parse(raw);
+        } catch (_) { return null; }
+      }
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      }
+      function $(sel, root) { return (root || document).querySelector(sel); }
 
-    function showLevelUp(level) {
-      celebrateCard();
-      shootConfetti(120);
-      const overlay = document.createElement('div');
-      overlay.className = 'levelup-overlay';
-      overlay.innerHTML = `
+      /* =========================================================
+         AdSense — pacote agressivo (compatível com Auto Ads)
+         - Cada etapa = nova URL virtual via history.pushState
+         - 2 zonas fixas (topo + rodapé) renovadas a cada etapa
+         - Slots in-feed extras no reveal final
+         - adsbygoogle.push({}) chamado uma vez por <ins> novo
+         ========================================================= */
+      let __adSlotCounter = 0;
+      const AD_CLIENT = 'ca-pub-2010551307643944';
+
+      function makeAdSlot(opts) {
+        opts = opts || {};
+        const id = 'ad-slot-' + (++__adSlotCounter);
+        const label = opts.label || 'Publicidade';
+        const cls = opts.classOverride || 'ad-zone-label';
+        return `
+          <div class="${cls}">${label}</div>
+          
+        `;
+      }
+
+      function makeInlineAdSlot(label) {
+        const id = 'ad-slot-' + (++__adSlotCounter);
+        return `
+          <div class="ad-inline"><ins class="adsbygoogle" style="display:block;text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-2010551307643944" data-ad-slot="8260874839"></ins></div>
+            
+          </div>
+        `;
+      }
+
+      function refreshAdZones() {
+        // IMPORTANTE: só cria slot se ainda não tem um carregado.
+        // Recriar slots a cada step dispara rate limit do AdSense.
+        // O refresh "virtual" agora vem do pushState + Auto Ads do Google.
+        const top = document.getElementById('adZoneTop');
+        const bot = document.getElementById('adZoneBottom');
+        if (top && !top.querySelector('ins.adsbygoogle')) {
+          top.innerHTML = makeAdSlot({ label: 'Publicidade · Patrocinado' });
+        }
+        if (bot && !bot.querySelector('ins.adsbygoogle')) {
+          bot.innerHTML = makeAdSlot({ label: 'Publicidade · Patrocinado' });
+        }
+      }
+
+      // Throttle global de push() — AdSense recusa pushes muito rápidos
+      let __lastAdPushAt = 0;
+      const __pushQueue = [];
+      let __pushDraining = false;
+      function safeAdPush(ins) {
+        if (ins.dataset.adsLoaded) return;
+        __pushQueue.push(ins);
+        drainPushQueue();
+      }
+      function drainPushQueue() {
+        if (__pushDraining) return;
+        __pushDraining = true;
+        const tick = () => {
+          if (!__pushQueue.length) { __pushDraining = false; return; }
+          const elapsed = Date.now() - __lastAdPushAt;
+          const wait = Math.max(0, 900 - elapsed); // pelo menos 900ms entre push()
+          setTimeout(() => {
+            const ins = __pushQueue.shift();
+            if (ins && !ins.dataset.adsLoaded) {
+              try {
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+                ins.dataset.adsLoaded = '1';
+                __lastAdPushAt = Date.now();
+              } catch (e) {}
+            }
+            tick();
+          }, wait);
+        };
+        tick();
+      }
+
+      // Lazy init via IntersectionObserver — slot só carrega quando entra na viewport.
+      // Comportamento mais "natural" pro AdSense, melhora fill rate.
+      const __adObs = ('IntersectionObserver' in window)
+        ? new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+              if (e.isIntersecting && !e.target.dataset.adsLoaded) {
+                safeAdPush(e.target);
+                __adObs.unobserve(e.target);
+              }
+            });
+          }, { rootMargin: '200px' })
+        : null;
+
+      function triggerAds() {
+        document.querySelectorAll('ins.adsbygoogle').forEach(ins => {
+          if (ins.dataset.adsLoaded || ins.dataset.adsObserved) return;
+          if (__adObs) {
+            __adObs.observe(ins);
+            ins.dataset.adsObserved = '1';
+          } else {
+            safeAdPush(ins);
+          }
+        });
+      }
+
+      function pushVirtualUrl(step) {
+        try {
+          const url = step === 0
+            ? '/descobrir-cartao.html'
+            : '/descobrir-cartao.html?etapa=' + step;
+          history.pushState({ step: step }, '', url);
+        } catch (e) {}
+      }
+
+      /* Conduz o lead pro CTA depois de responder.
+         Aterrissa COM o botão no centro da viewport — ad inline acima
+         fica fora da linha de toque do dedo, evitando cliques acidentais
+         (compatível com políticas AdSense). */
+      function nudgeToCTA(btn) {
+        if (!btn) return;
+        // Delay deixa o usuário processar a seleção antes do scroll
+        setTimeout(() => {
+          try {
+            btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } catch (e) {
+            btn.scrollIntoView();
+          }
+          btn.classList.add('cta-attention');
+          setTimeout(() => btn.classList.remove('cta-attention'), 1300);
+        }, 350);
+      }
+
+      function levelForXp(xp) {
+        let idx = 0;
+        for (let i = 0; i < LEVELS.length; i++) if (xp >= LEVELS[i].from) idx = i;
+        return idx;
+      }
+
+      /* ---------- XP & Níveis ---------- */
+      function addXp(amount, anchorEl) {
+        state.xp += amount;
+        saveState();
+        floatXp(amount, anchorEl);
+        updateHeader();
+        const newLevel = levelForXp(state.xp);
+        if (newLevel > state.levelIndex) {
+          state.levelIndex = newLevel;
+          saveState();
+          showLevelUp(LEVELS[newLevel]);
+        }
+      }
+      function floatXp(amount, anchorEl) {
+        const node = document.createElement('div');
+        node.className = 'xp-float';
+        node.textContent = '+' + amount + ' XP';
+        const rect = (anchorEl || $('#xpCount')).getBoundingClientRect();
+        node.style.left = (rect.left + rect.width / 2) + 'px';
+        node.style.top = (rect.top + 6) + 'px';
+        document.body.appendChild(node);
+        setTimeout(() => node.remove(), 1300);
+      }
+
+      function showLevelUp(level) {
+        celebrateCard();
+        shootConfetti(120);
+        const overlay = document.createElement('div');
+        overlay.className = 'levelup-overlay';
+        overlay.innerHTML = `
         <div class="levelup-modal" role="dialog" aria-label="Novo nível">
           <div class="ico">${level.icon}</div>
           <h2>NÍVEL DESBLOQUEADO</h2>
@@ -1126,235 +2450,700 @@
           <p>Você está se aproximando do diagnóstico final.</p>
         </div>
       `;
-      document.body.appendChild(overlay);
-      setTimeout(() => overlay.remove(), 2200);
-    }
-
-    function celebrateCard() {
-      const card = $('#card');
-      card.classList.add('is-celebrating');
-      setTimeout(() => card.classList.remove('is-celebrating'), 1100);
-    }
-
-    /* ---------- Badges ---------- */
-    function unlockBadge(id, label) {
-      if (state.badges.includes(id)) return;
-      state.badges.push(id);
-      saveState();
-      renderBadges();
-      toast('🏅 Conquista desbloqueada: ' + label);
-    }
-    function renderBadges() {
-      const host = $('#badgesStrip');
-      if (!state.badges.length) { host.hidden = true; return; }
-      host.hidden = false;
-      host.innerHTML = state.badges.map(b => {
-        const meta = BADGE_META[b];
-        if (!meta) return '';
-        return `<span class="badge-pill" title="${escapeHtml(meta.label)}">${meta.icon} ${escapeHtml(meta.short)}</span>`;
-      }).join('');
-    }
-    const BADGE_META = {
-      START:    { icon: '🚀', label: 'Começou a jornada',    short: 'Começou' },
-      QUICK:    { icon: '⚡', label: 'Resposta Relâmpago',   short: 'Relâmpago' },
-      FOCUSED:  { icon: '🎯', label: 'Focado',                short: 'Focado' },
-      PROFILE:  { icon: '🧠', label: 'Perfil Completo',       short: 'Perfil' },
-      VIP:      { icon: '💎', label: 'Análise VIP',           short: 'VIP' },
-      FINALIST: { icon: '🏆', label: 'Finalista',             short: 'Finalista' },
-      UNLOCKED: { icon: '🌟', label: 'Diagnóstico desbloqueado', short: 'Desbloqueado' }
-    };
-
-    /* ---------- Toast ---------- */
-    function toast(msg) {
-      const host = $('#toastHost');
-      const el = document.createElement('div');
-      el.className = 'toast';
-      el.textContent = msg;
-      host.appendChild(el);
-      setTimeout(() => el.remove(), 3700);
-    }
-
-    /* ---------- Confetti ---------- */
-    function shootConfetti(amount) {
-      const host = $('#confettiHost');
-      const colors = ['#7C3AED', '#A855F7', '#F59E0B', '#FBBF24', '#10B981', '#EC4899'];
-      for (let i = 0; i < amount; i++) {
-        const c = document.createElement('div');
-        c.className = 'confetti';
-        c.style.left = Math.random() * 100 + '%';
-        c.style.background = colors[i % colors.length];
-        c.style.animationDuration = (1.6 + Math.random() * 1.6) + 's';
-        c.style.animationDelay = (Math.random() * .35) + 's';
-        c.style.transform = 'rotate(' + Math.floor(Math.random() * 360) + 'deg)';
-        host.appendChild(c);
-        setTimeout(() => c.remove(), 3500);
+        document.body.appendChild(overlay);
+        setTimeout(() => overlay.remove(), 2200);
       }
-    }
 
-    /* ---------- Header ---------- */
-    function updateHeader() {
-      $('#xpCount').textContent = state.xp;
-      const lvl = LEVELS[state.levelIndex];
-      $('#levelName').textContent = lvl.name;
-      const pct = Math.min(100, Math.round((state.step / TOTAL_STEPS) * 100));
-      $('#progressFill').style.width = pct + '%';
-      $('#stepLabel').textContent = `Etapa ${Math.min(state.step, TOTAL_STEPS)} de ${TOTAL_STEPS}`;
-    }
+      function celebrateCard() {
+        const card = $('#card');
+        card.classList.add('is-celebrating');
+        setTimeout(() => card.classList.remove('is-celebrating'), 1100);
+      }
 
-    /* ---------- Definição dos passos ---------- */
-    const STEPS = [
-      { kind: 'welcome' },
-      {
-        kind: 'choice',
-        id: 'age',
-        eyebrow: 'Etapa 1 · Sobre você',
-        title: 'Qual a sua faixa de idade?',
-        lead: 'Pergunta rápida pra calibrar o diagnóstico. Algumas categorias têm requisitos específicos por faixa etária.',
-        options: [
-          { value: '18-24',  label: '18 a 24 anos' },
-          { value: '25-34',  label: '25 a 34 anos' },
-          { value: '35-44',  label: '35 a 44 anos' },
-          { value: '45-59',  label: '45 a 59 anos' },
-          { value: '60+',    label: '60 anos ou mais' }
-        ]
-      },
-      {
-        kind: 'visual',
-        id: 'style',
-        eyebrow: 'Etapa 2 · Estilo de uso',
-        title: 'Como você usa (ou pretende usar) o cartão?',
-        lead: 'Escolha o cenário que mais combina com seu dia a dia. Não existe resposta errada — isso ajusta o diagnóstico.',
-        options: [
-          { value: 'daily',    icon: '🛒', title: 'Dia a dia',          sub: 'Mercado, contas, transporte' },
-          { value: 'travel',   icon: '✈️', title: 'Viagens & lazer',    sub: 'Milhas, hotéis, pacotes' },
-          { value: 'premium',  icon: '💎', title: 'Status & exclusividade', sub: 'Salas VIP, concierge' },
-          { value: 'starter',  icon: '🌱', title: 'Quero começar',      sub: 'Construir histórico do zero' }
-        ]
-      },
-      {
-        kind: 'choice',
-        id: 'spending',
-        eyebrow: 'Etapa 3 · Hábito de gasto',
-        title: 'Quanto você costuma gastar no cartão por mês?',
-        lead: 'Uma estimativa basta. Esse valor ajuda a apontar produtos com benefícios proporcionais ao seu volume.',
-        options: [
-          { value: 'lt500',     label: 'Até R$ 500' },
-          { value: '500-2k',    label: 'R$ 500 a R$ 2.000' },
-          { value: '2k-5k',     label: 'R$ 2.000 a R$ 5.000' },
-          { value: '5k-15k',    label: 'R$ 5.000 a R$ 15.000' },
-          { value: 'gt15k',     label: 'Acima de R$ 15.000' }
-        ]
-      },
-      {
-        kind: 'choice',
-        id: 'income',
-        eyebrow: 'Etapa 4 · Renda mensal',
-        title: 'Qual a sua faixa de renda atual?',
-        lead: 'A renda comprovada costuma ser o critério principal de análise dos emissores. Use o valor bruto.',
-        options: [
-          { value: 'lt2k',      label: 'Até R$ 2.000' },
-          { value: '2k-5k',     label: 'R$ 2.000 a R$ 5.000' },
-          { value: '5k-10k',    label: 'R$ 5.000 a R$ 10.000' },
-          { value: '10k-20k',   label: 'R$ 10.000 a R$ 20.000' },
-          { value: 'gt20k',     label: 'Acima de R$ 20.000' },
-          { value: 'unsure',    label: 'Prefiro não informar' }
-        ]
-      },
-      {
-        kind: 'choice',
-        id: 'creditProfile',
-        eyebrow: 'Etapa 5 · Perfil de crédito',
-        title: 'Como está sua situação de crédito hoje?',
-        lead: 'Não há resposta certa. Cada perfil tem categorias indicadas — inclusive quem está reconstruindo o histórico.',
-        afterBadge: { id: 'PROFILE', label: 'Perfil Completo' },
-        options: [
-          { value: 'clean',     label: 'Nome limpo, com bom histórico' },
-          { value: 'fair',      label: 'Nome limpo, mas histórico curto' },
-          { value: 'thin',      label: 'Quase nenhum histórico de crédito' },
-          { value: 'restricted',label: 'Nome com restrição (negativado)' },
-          { value: 'unsure',    label: 'Não tenho certeza' }
-        ]
-      },
-      { kind: 'tap', eyebrow: 'Etapa 6 · Mini-game', title: 'Toque nas estrelas que aparecerem!', lead: 'Você tem 8 segundos. Cada acerto adiciona XP. Não vale segurar — só clicar quando aparecer ⭐.' },
-      {
-        kind: 'choice',
-        id: 'paymentBehavior',
-        eyebrow: 'Etapa 7 · Comportamento de pagamento',
-        title: 'Como você costuma pagar a fatura?',
-        lead: 'Esse padrão influencia muito qual tipo de cartão te beneficia mais (ou te custa mais caro).',
-        options: [
-          { value: 'full',      label: 'Sempre pago o valor total' },
-          { value: 'mostly',    label: 'Quase sempre pago integral' },
-          { value: 'minimum',   label: 'Costumo pagar o mínimo' },
-          { value: 'late',      label: 'Já atrasei algumas vezes' },
-          { value: 'na',        label: 'Ainda não tenho cartão' }
-        ]
-      },
-      { kind: 'analysis' },
-      {
-        kind: 'choice',
-        id: 'mainGoal',
-        eyebrow: 'Etapa 9 · Objetivo principal',
-        title: 'Qual é o seu maior objetivo com o cartão?',
-        lead: 'Última decisão estratégica antes do diagnóstico final. Escolha o que mais importa pra você agora.',
-        options: [
-          { value: 'cashback',  label: '💰 Receber cashback nas compras' },
-          { value: 'miles',     label: '✈️ Acumular milhas para viajar' },
-          { value: 'noFee',     label: '🪙 Não pagar anuidade' },
-          { value: 'build',     label: '🌱 Construir ou reconstruir crédito' },
-          { value: 'premium',   label: '💎 Ter benefícios premium e status' },
-          { value: 'limit',     label: '📈 Aumentar meu limite disponível' }
-        ]
-      },
-      { kind: 'preReveal' },
-      { kind: 'capture' }
-    ];
-
-    /* ---------- Render ---------- */
-    function render() {
-      const root = $('#stepRoot');
-      const header = $('#cardHeader');
-      const badges = $('#badgesStrip');
-
-      // Welcome (step 0): sem header
-      if (state.step === 0) {
-        header.hidden = true;
-        badges.hidden = true;
-      } else {
-        header.hidden = false;
+      /* ---------- Badges ---------- */
+      function unlockBadge(id, label) {
+        if (state.badges.includes(id)) return;
+        state.badges.push(id);
+        saveState();
         renderBadges();
-        updateHeader();
+        toast('🏅 Conquista desbloqueada: ' + label);
+      }
+      function renderBadges() {
+        const host = $('#badgesStrip');
+        if (!state.badges.length) { host.hidden = true; return; }
+        host.hidden = false;
+        host.innerHTML = state.badges.map(b => {
+          const meta = BADGE_META[b];
+          if (!meta) return '';
+          return `<span class="badge-pill" title="${escapeHtml(meta.label)}">${meta.icon} ${escapeHtml(meta.short)}</span>`;
+        }).join('');
+      }
+      const BADGE_META = {
+        START: { icon: '🚀', label: 'Começou a jornada', short: 'Começou' },
+        QUICK: { icon: '⚡', label: 'Resposta Relâmpago', short: 'Relâmpago' },
+        FOCUSED: { icon: '🎯', label: 'Focado', short: 'Focado' },
+        PROFILE: { icon: '🧠', label: 'Perfil Completo', short: 'Perfil' },
+        VIP: { icon: '💎', label: 'Análise VIP', short: 'VIP' },
+        FINALIST: { icon: '🏆', label: 'Finalista', short: 'Finalista' },
+        UNLOCKED: { icon: '🌟', label: 'Diagnóstico desbloqueado', short: 'Desbloqueado' }
+      };
+
+      /* ---------- Toast ---------- */
+      function toast(msg) {
+        const host = $('#toastHost');
+        const el = document.createElement('div');
+        el.className = 'toast';
+        el.textContent = msg;
+        host.appendChild(el);
+        setTimeout(() => el.remove(), 3700);
       }
 
-      // Reveal final
-      if (state.step > TOTAL_STEPS) {
-        root.innerHTML = '';
-        renderFinalReveal(root);
-        return;
+      /* ---------- Confetti ---------- */
+      function shootConfetti(amount) {
+        const host = $('#confettiHost');
+        const colors = ['#7C3AED', '#A855F7', '#F59E0B', '#FBBF24', '#10B981', '#EC4899'];
+        for (let i = 0; i < amount; i++) {
+          const c = document.createElement('div');
+          c.className = 'confetti';
+          c.style.left = Math.random() * 100 + '%';
+          c.style.background = colors[i % colors.length];
+          c.style.animationDuration = (1.6 + Math.random() * 1.6) + 's';
+          c.style.animationDelay = (Math.random() * .35) + 's';
+          c.style.transform = 'rotate(' + Math.floor(Math.random() * 360) + 'deg)';
+          host.appendChild(c);
+          setTimeout(() => c.remove(), 3500);
+        }
       }
 
-      const def = STEPS[state.step];
-      state.stepStartedAt = Date.now();
-      saveState();
+      /* =======================================================
+         Sistema de notificações em cascata · análise ao vivo
+         ======================================================= */
+      const BANKS = [
+        'Nubank', 'C6 Bank', 'Itaú', 'Bradesco', 'Santander', 'Inter', 'BTG Pactual',
+        'XP Investimentos', 'PicPay', 'Banco Original', 'Mercado Pago', 'Will Bank',
+        'Neon', 'Caixa', 'Banco do Brasil', 'PAN', 'Digio', 'Next', 'Pagbank', 'Cora'
+      ];
 
-      switch (def.kind) {
-        case 'welcome':    return renderWelcome(root);
-        case 'visual':     return renderVisual(root, def);
-        case 'choice':     return renderChoice(root, def);
-        case 'tap':        return renderTap(root, def);
-        case 'analysis':   return renderAnalysis(root);
-        case 'preReveal':  return renderPreReveal(root);
-        case 'capture':    return renderCapture(root);
+      const notifState = {
+        panel: { verified: 0, compatible: 0, preApproved: 0, vipOffers: 0 },
+        feed: [],
+        scan: { idx: 0, total: BANKS.length },
+        timers: [],
+        bgInterval: null,
+        bgComplete: false
+      };
+
+      /* Análise rodando em background — incrementa o painel mesmo
+         quando o usuário está parado lendo um artigo. */
+      function startBackgroundScan() {
+        if (notifState.bgInterval || notifState.bgComplete) return;
+
+        const tick = () => {
+          // Análise só finaliza quando o usuário chega na Etapa 11 (preReveal)
+          // O stop é disparado pelo render() — aqui só seguimos incrementando.
+
+          // Incremento principal: +1 a +3 bancos verificados
+          const bump = 1 + Math.floor(Math.random() * 3);
+          const updates = { verified: bump };
+
+          // Chance proporcional pros demais contadores
+          if (Math.random() < 0.42) updates.compatible = 1;
+          if (Math.random() < 0.18) updates.preApproved = 1;
+          if (Math.random() < 0.06) updates.vipOffers = 1;
+          updatePanelCounters(updates);
+          advanceScan(bump);
+
+          // Feed ocasional, sem inflar
+          if (Math.random() < 0.28) {
+            const bank = BANKS[notifState.scan.idx];
+            const phrases = [
+              `Verificando ${bank}`,
+              `${bank} · cruzando produtos`,
+              `${bank} mapeado na análise`,
+              `Comparando catálogo ${bank}`
+            ];
+            const phrase = phrases[Math.floor(Math.random() * phrases.length)];
+            addFeedItem('🔎', phrase, 'discovery');
+          }
+        };
+
+        // Roda com leve jitter pra parecer orgânico
+        notifState.bgInterval = setInterval(tick, 2800 + Math.floor(Math.random() * 600));
+        // Primeiro tick mais cedo pra dar movimento imediato
+        setTimeout(tick, 1200);
       }
-    }
 
-    /* ---------- Welcome ---------- */
-    function renderWelcome(root) {
-      root.innerHTML = `
+      function stopBackgroundScan(opts) {
+        if (notifState.bgInterval) {
+          clearInterval(notifState.bgInterval);
+          notifState.bgInterval = null;
+        }
+        if (opts && opts.markComplete && !notifState.bgComplete) {
+          notifState.bgComplete = true;
+          addFeedItem('✅', 'Análise das instituições concluída', 'compatibility');
+          const bankEl = $('#liveScanBank');
+          const fill = $('#liveScanFill');
+          if (bankEl) bankEl.textContent = 'concluído';
+          if (fill) fill.style.width = '100%';
+        }
+      }
+
+      function trackedTimeout(fn, delay) {
+        const id = setTimeout(fn, delay);
+        notifState.timers.push(id);
+        return id;
+      }
+      function clearPendingTimers() {
+        notifState.timers.forEach(clearTimeout);
+        notifState.timers = [];
+      }
+
+      function showLivePanel() {
+        const p = $('#livePanel');
+        if (p) p.hidden = false;
+      }
+
+      function animateCounter(elId, delta) {
+        const el = $('#' + elId);
+        if (!el) return;
+        const start = parseInt(el.textContent || '0', 10);
+        const end = start + delta;
+        let cur = start;
+        const tick = () => {
+          cur += Math.max(1, Math.ceil((end - cur) / 4));
+          if (cur >= end) { cur = end; }
+          el.textContent = cur;
+          el.classList.add('flash');
+          setTimeout(() => el.classList.remove('flash'), 280);
+          if (cur < end) trackedTimeout(tick, 60);
+        };
+        tick();
+      }
+
+      function updatePanelCounters(updates) {
+        if (!updates) return;
+        const map = {
+          verified: { num: 'liveVerified', chip: 'chipVerified' },
+          compatible: { num: 'liveCompatible', chip: 'chipCompatible' },
+          preApproved: { num: 'livePreApproved', chip: 'chipPreApproved' },
+          vipOffers: { num: 'liveVipOffers', chip: 'chipVipOffers' }
+        };
+        Object.keys(updates).forEach(k => {
+          notifState.panel[k] = (notifState.panel[k] || 0) + updates[k];
+          animateCounter(map[k].num, updates[k]);
+          // Atualiza o chip mobile (sem animação contínua, só valor + flash)
+          const chip = $('#' + map[k].chip);
+          if (chip) {
+            const strong = chip.querySelector('strong');
+            if (strong) strong.textContent = notifState.panel[k];
+            chip.classList.add('flash');
+            setTimeout(() => chip.classList.remove('flash'), 400);
+          }
+        });
+        flashMobilePanel();
+        updateHandleSummary();
+      }
+
+      function updateHandleSummary() {
+        const s = $('#liveHandleSummary');
+        if (s) s.textContent = `${notifState.panel.compatible} cartões compatíveis ▲`;
+      }
+
+      function flashMobilePanel() {
+        const p = $('#livePanel');
+        if (!p) return;
+        p.classList.add('flash');
+        setTimeout(() => p.classList.remove('flash'), 800);
+      }
+
+      function addFeedItem(emoji, text, type) {
+        const feed = $('#liveFeed');
+        if (!feed) return;
+        const item = document.createElement('div');
+        item.className = 'feed-item ' + (type || 'discovery');
+        item.innerHTML = `<div>${emoji} ${escapeHtml(text)}</div><div class="feed-time">agora mesmo</div>`;
+        feed.insertBefore(item, feed.firstChild);
+        // Mantém só os 5 mais recentes
+        while (feed.children.length > 5) feed.removeChild(feed.lastChild);
+        // Atualiza timestamps relativos
+        Array.from(feed.children).forEach((el, i) => {
+          const t = el.querySelector('.feed-time');
+          if (t && i > 0) t.textContent = `há ${i * 8}s`;
+        });
+      }
+
+      function advanceScan(banksToAdd) {
+        const total = BANKS.length;
+        for (let k = 0; k < banksToAdd; k++) {
+          notifState.scan.idx = (notifState.scan.idx + 1) % total;
+        }
+        const bankEl = $('#liveScanBank');
+        const fill = $('#liveScanFill');
+        if (bankEl) bankEl.textContent = BANKS[notifState.scan.idx];
+        const pct = Math.min(100, Math.round((notifState.panel.verified / 60) * 100));
+        if (fill) fill.style.width = pct + '%';
+      }
+
+      function showContextualToast(cfg) {
+        if (!cfg) return;
+        const host = $('#ctxHost');
+        const el = document.createElement('div');
+        el.className = 'toast-ctx ' + (cfg.type || 'discovery');
+        el.innerHTML = `
+        <div class="toast-ctx-body">
+          <div class="toast-ctx-ico">${cfg.icon || '✨'}</div>
+          <div class="toast-ctx-text">
+            <h5>${escapeHtml(cfg.title || '')}</h5>
+            <p>${escapeHtml(cfg.subtitle || '')}</p>
+            ${typeof cfg.scanPct === 'number' ? `
+              <div class="toast-ctx-mini"><span style="width:${cfg.scanPct}%"></span></div>
+              <div class="toast-ctx-pct">${cfg.scanPct}% das instituições verificadas</div>
+            ` : ''}
+          </div>
+        </div>
+        <div class="toast-ctx-bar"><span></span></div>
+      `;
+        host.appendChild(el);
+        // Limita a 2 simultâneos
+        while (host.children.length > 2) host.removeChild(host.firstChild);
+        setTimeout(() => {
+          el.classList.add('closing');
+          setTimeout(() => el.remove(), 320);
+        }, 5000);
+      }
+
+      /* ---------- Configuração de notificações por step+resposta ---------- */
+      function getNotificationConfig(stepDef, answerVal) {
+        if (!stepDef || !stepDef.id) return null;
+        const id = stepDef.id;
+        const v = answerVal;
+
+        // Estilo de uso
+        if (id === 'style') {
+          const map = {
+            daily: {
+              add: 8, panel: { verified: 8, compatible: 3 }, emoji: '🛒', text: 'Perfil diário identificado · 3 categorias relevantes', type: 'discovery',
+              toast: { type: 'compatibility', icon: '🎯', title: '3 cartões de cashback encontrados', subtitle: 'Seu padrão de uso combina com cartões que devolvem dinheiro a cada compra.', scanPct: 15 }
+            },
+            travel: {
+              add: 8, panel: { verified: 8, compatible: 4, vipOffers: 1 }, emoji: '✈️', text: 'Programas de milhas mapeados · Smiles, Latam Pass, Livelo', type: 'vip',
+              toast: { type: 'vip', icon: '⭐', title: '4 programas de milhas compatíveis', subtitle: 'Smiles, Latam Pass, Livelo e Esfera estão na sua lista.', scanPct: 15 }
+            },
+            premium: {
+              add: 9, panel: { verified: 9, compatible: 2, vipOffers: 2 }, emoji: '💎', text: 'Categoria Black/Premium ativada na análise', type: 'vip',
+              toast: { type: 'vip', icon: '💎', title: 'Cartões Premium na análise', subtitle: 'Apenas perfis com renda comprovada acessam essa faixa.', scanPct: 15 }
+            },
+            starter: {
+              add: 7, panel: { verified: 7, compatible: 5 }, emoji: '🌱', text: 'Categoria Starter / construir crédito ativada', type: 'compatibility',
+              toast: { type: 'compatibility', icon: '🌱', title: '5 cartões para construir crédito', subtitle: 'Critérios suavizados e foco em fortalecer histórico.', scanPct: 15 }
+            }
+          };
+          return map[v];
+        }
+
+        // Hábito de gasto
+        if (id === 'spending') {
+          const map = {
+            'lt500': {
+              add: 5, panel: { verified: 5, compatible: 2 }, emoji: '💵', text: 'Volume baixo · sem anuidade priorizado', type: 'discovery',
+              toast: { type: 'discovery', icon: '🪙', title: 'Sem anuidade vence pra esse volume', subtitle: 'Pra gastos abaixo de R$ 1.500/mês, anuidade raramente compensa.', scanPct: 30 }
+            },
+            '500-2k': { add: 6, panel: { verified: 6, compatible: 3 }, emoji: '💳', text: 'Volume médio · cashback compensando anuidade', type: 'compatibility' },
+            '2k-5k': {
+              add: 7, panel: { verified: 7, compatible: 4, preApproved: 1 }, emoji: '💰', text: 'Volume alto · cashback e milhas viáveis', type: 'compatibility',
+              toast: { type: 'compatibility', icon: '💰', title: 'Cashback de 1–2% começa a pagar', subtitle: 'Volumes acima de R$ 2k/mês justificam categorias com benefícios.', scanPct: 30 }
+            },
+            '5k-15k': {
+              add: 8, panel: { verified: 8, compatible: 5, preApproved: 2, vipOffers: 1 }, emoji: '📈', text: 'Volume premium · faixa Black possível', type: 'vip',
+              toast: { type: 'vip', icon: '📈', title: 'Categorias Black entram no radar', subtitle: 'Volume mensal alto desbloqueia análise de produtos premium.', scanPct: 30 }
+            },
+            'gt15k': {
+              add: 9, panel: { verified: 9, compatible: 6, preApproved: 3, vipOffers: 2 }, emoji: '💎', text: 'Volume top · todos os benefícios mapeados', type: 'vip',
+              toast: { type: 'vip', icon: '⭐', title: 'Faixa Black confirmada', subtitle: 'Apenas 7% dos perfis chegam a esse volume mensal.', scanPct: 30 }
+            }
+          };
+          return map[v];
+        }
+
+        // Renda
+        if (id === 'income') {
+          const map = {
+            'lt2k': { add: 5, panel: { verified: 5, compatible: 2 }, emoji: '🛟', text: 'Análise focada em produtos sem comprovação rígida', type: 'discovery' },
+            '2k-5k': { add: 6, panel: { verified: 6, compatible: 3, preApproved: 1 }, emoji: '✅', text: 'Renda compatível com 3 categorias principais', type: 'compatibility' },
+            '5k-10k': {
+              add: 7, panel: { verified: 7, compatible: 5, preApproved: 2 }, emoji: '🚀', text: 'Faixa de renda média alta · cashback e milhas', type: 'compatibility',
+              toast: { type: 'compatibility', icon: '🚀', title: 'Faixa de renda destrava 5 categorias', subtitle: 'Ampla oferta de cartões com benefícios reais.', scanPct: 45 }
+            },
+            '10k-20k': {
+              add: 8, panel: { verified: 8, compatible: 5, preApproved: 3, vipOffers: 2 }, emoji: '💎', text: 'Faixa premium · análise Black ativada', type: 'vip',
+              toast: { type: 'vip', icon: '💎', title: 'Análise Black ativada', subtitle: 'Sua faixa de renda destrava cartões com seguros e concierge.', scanPct: 45 }
+            },
+            'gt20k': {
+              add: 9, panel: { verified: 9, compatible: 6, preApproved: 4, vipOffers: 3 }, emoji: '👑', text: 'Faixa top · 3 ofertas VIP exclusivas', type: 'vip',
+              toast: { type: 'vip', icon: '👑', title: '3 ofertas VIP no radar', subtitle: 'Apenas 4% dos diagnósticos chegam à sua faixa.', scanPct: 45 }
+            },
+            'unsure': { add: 4, panel: { verified: 4, compatible: 2 }, emoji: '🔎', text: 'Análise neutra · todas as faixas consideradas', type: 'discovery' }
+          };
+          return map[v];
+        }
+
+        // Perfil de crédito
+        if (id === 'creditProfile') {
+          const map = {
+            clean: {
+              add: 7, panel: { verified: 7, compatible: 4, preApproved: 2 }, emoji: '🏆', text: 'Score alto · acesso amplo a categorias', type: 'compatibility',
+              toast: { type: 'compatibility', icon: '🏆', title: 'Histórico bom abre todas as portas', subtitle: 'Score alto desbloqueia até cartões premium.', scanPct: 55 }
+            },
+            fair: { add: 6, panel: { verified: 6, compatible: 3, preApproved: 1 }, emoji: '✨', text: 'Histórico curto · análise por movimentação bancária', type: 'discovery' },
+            thin: {
+              add: 5, panel: { verified: 5, compatible: 3 }, emoji: '🌱', text: 'Sem histórico · cartões starter priorizados', type: 'discovery',
+              toast: { type: 'discovery', icon: '🌱', title: 'Cartões para construir histórico', subtitle: 'Limites menores no início, mas crescem rápido com bom uso.', scanPct: 55 }
+            },
+            restricted: {
+              add: 4, panel: { verified: 4, compatible: 3 }, emoji: '🛟', text: 'Nome restrito · pré-pagos e consignados mapeados', type: 'discovery',
+              toast: { type: 'discovery', icon: '🛟', title: '3 categorias funcionam com nome restrito', subtitle: 'Pré-pagos, consignados e cartões garantidos por aplicação.', scanPct: 55 }
+            },
+            unsure: { add: 5, panel: { verified: 5, compatible: 3 }, emoji: '🔎', text: 'Análise por movimentação financeira', type: 'discovery' }
+          };
+          return map[v];
+        }
+
+        // Comportamento de pagamento
+        if (id === 'paymentBehavior') {
+          const map = {
+            full: {
+              add: 6, panel: { verified: 6, compatible: 3, preApproved: 1 }, emoji: '✅', text: 'Padrão de pagamento integral · cashback e milhas viáveis', type: 'compatibility',
+              toast: { type: 'compatibility', icon: '✅', title: 'Padrão ideal pra cashback e milhas', subtitle: 'Quem paga integral aproveita 100% dos benefícios sem juros.', scanPct: 75 }
+            },
+            mostly: { add: 6, panel: { verified: 6, compatible: 3 }, emoji: '👍', text: 'Pagamento quase integral · perfil saudável', type: 'compatibility' },
+            minimum: {
+              add: 4, panel: { verified: 4, compatible: 2 }, emoji: '⚠️', text: 'Pagamento mínimo · sem anuidade priorizado', type: 'urgency',
+              toast: { type: 'urgency', icon: '⚠️', title: 'Atenção ao rotativo', subtitle: 'Taxa rotativa pode dobrar a dívida em poucos meses. Veja categorias mais seguras.', scanPct: 75 }
+            },
+            late: { add: 3, panel: { verified: 3, compatible: 2 }, emoji: '⏰', text: 'Atrasos no histórico · análise conservadora', type: 'urgency' },
+            na: { add: 5, panel: { verified: 5, compatible: 3 }, emoji: '🌱', text: 'Sem cartão atual · starter priorizado', type: 'discovery' }
+          };
+          return map[v];
+        }
+
+        // Idade (sutil)
+        if (id === 'age') {
+          return { add: 4, panel: { verified: 4, compatible: 1 }, emoji: '👤', text: `Faixa etária ${v} mapeada · iniciando análise`, type: 'discovery' };
+        }
+
+        // Objetivo principal
+        if (id === 'mainGoal') {
+          const map = {
+            cashback: {
+              add: 5, panel: { verified: 5, compatible: 3, preApproved: 1 }, emoji: '💰', text: 'Foco cashback · 3 cartões priorizados', type: 'compatibility',
+              toast: { type: 'compatibility', icon: '💰', title: 'Diagnóstico final · foco cashback', subtitle: '3 cartões com retorno acima de 1% identificados.', scanPct: 90 }
+            },
+            miles: {
+              add: 5, panel: { verified: 5, compatible: 3, preApproved: 1, vipOffers: 1 }, emoji: '✈️', text: 'Foco milhas · programas convergidos', type: 'vip',
+              toast: { type: 'vip', icon: '✈️', title: 'Diagnóstico final · foco milhas', subtitle: 'Programas de pontos do seu perfil estão prontos.', scanPct: 90 }
+            },
+            noFee: { add: 5, panel: { verified: 5, compatible: 3 }, emoji: '🪙', text: 'Foco sem anuidade · custo zero', type: 'discovery' },
+            build: { add: 5, panel: { verified: 5, compatible: 4 }, emoji: '🌱', text: 'Foco construir crédito · plano de 6 meses', type: 'discovery' },
+            premium: {
+              add: 5, panel: { verified: 5, compatible: 2, vipOffers: 2 }, emoji: '💎', text: 'Foco premium · análise Black finalizada', type: 'vip',
+              toast: { type: 'vip', icon: '💎', title: 'Diagnóstico final · foco premium', subtitle: 'Cartões com sala VIP, concierge e seguros mapeados.', scanPct: 90 }
+            },
+            limit: { add: 5, panel: { verified: 5, compatible: 3, preApproved: 2 }, emoji: '📈', text: 'Foco limite alto · pré-elegíveis identificados', type: 'compatibility' }
+          };
+          return map[v];
+        }
+
+        return null;
+      }
+
+      function fireNotificationsFor(stepDef, answerVal) {
+        const cfg = getNotificationConfig(stepDef, answerVal);
+        if (!cfg) return;
+        // Cascata em cascata: feed → scan → contadores → toast
+        trackedTimeout(() => {
+          addFeedItem(cfg.emoji, cfg.text, cfg.type);
+          advanceScan(cfg.add || 0);
+        }, 350);
+        trackedTimeout(() => {
+          updatePanelCounters(cfg.panel);
+        }, 700);
+        if (cfg.toast) {
+          trackedTimeout(() => showContextualToast(cfg.toast), 1400);
+        }
+      }
+
+      // Bind do toggle do painel mobile
+      document.addEventListener('click', (e) => {
+        const handle = e.target.closest('#livePanelHandle');
+        if (handle) {
+          $('#livePanel').classList.toggle('expanded');
+        }
+      });
+
+      /* ---------- Header ---------- */
+      function updateHeader() {
+        $('#xpCount').textContent = state.xp;
+        const lvl = LEVELS[state.levelIndex];
+        $('#levelName').textContent = lvl.name;
+        const pct = Math.min(100, Math.round((state.step / TOTAL_STEPS) * 100));
+        $('#progressFill').style.width = pct + '%';
+        $('#stepLabel').textContent = `Etapa ${Math.min(state.step, TOTAL_STEPS)} de ${TOTAL_STEPS}`;
+      }
+
+      /* ---------- Definição dos passos ---------- */
+      const STEPS = [
+        { kind: 'welcome' },
+        {
+          kind: 'visual',
+          id: 'style',
+          eyebrow: 'Etapa 1 · Estilo de uso',
+          title: 'Como você usa (ou pretende usar) o cartão?',
+          lead: 'Escolha o cenário que mais combina com seu dia a dia. Não existe resposta errada — isso ajusta o diagnóstico.',
+          options: [
+            { value: 'daily', icon: '🛒', title: 'Dia a dia', sub: 'Mercado, contas, transporte' },
+            { value: 'travel', icon: '✈️', title: 'Viagens & lazer', sub: 'Milhas, hotéis, pacotes' },
+            { value: 'premium', icon: '💎', title: 'Status & exclusividade', sub: 'Salas VIP, concierge' },
+            { value: 'starter', icon: '🌱', title: 'Quero começar', sub: 'Construir histórico do zero' }
+          ],
+          article: {
+            title: 'O perfil de uso muda completamente os benefícios reais',
+            body: '<p>O melhor cartão é o que se encaixa no padrão real de gasto, não no padrão idealizado. Um cartão de milhas é desperdício para quem não viaja com frequência — pontos expiram, programas mudam regras, e a anuidade quase sempre pesa mais que o benefício. Cashback rende para quem paga a fatura integral todo mês; quem paga rotativo está entregando 1% de cashback em troca de juros que beiram 15% ao mês.</p><p>Cartões premium fazem sentido para quem usa concretamente os benefícios oferecidos: acessos a sala VIP em pelo menos 4 voos por ano, seguro viagem internacional, programas de pontos transferíveis. Sem uso real, viram custo fixo travestido de status.</p>',
+            tips: [
+              'Liste os 3 setores onde você mais gasta hoje (mercado, transporte, app delivery, etc.)',
+              'Verifique se o programa de pontos do cartão escolhido converte bem para esses setores',
+              'Calcule: se a anuidade é R$ 600/ano, o benefício recebido precisa passar disso',
+              'Reavalie seu cartão a cada 12 meses — programas e regras mudam constantemente'
+            ]
+          }
+        },
+        {
+          kind: 'choice',
+          id: 'age',
+          eyebrow: 'Etapa 2 · Sobre você',
+          title: 'Qual a sua faixa de idade?',
+          lead: 'Pergunta rápida pra calibrar o diagnóstico. Algumas categorias têm requisitos específicos por faixa etária.',
+          options: [
+            { value: '18-24', label: '18 a 24 anos' },
+            { value: '25-34', label: '25 a 34 anos' },
+            { value: '35-44', label: '35 a 44 anos' },
+            { value: '45-59', label: '45 a 59 anos' },
+            { value: '60+', label: '60 anos ou mais' }
+          ],
+          article: {
+            title: 'Por que a idade entra no diagnóstico de cartão',
+            body: '<p>A idade não decide aprovação por si só, mas baliza quais categorias fazem sentido. Cartões consignados, por exemplo, têm taxas mais baixas e são quase exclusivos para aposentados e pensionistas — uma das melhores opções de custo do mercado para quem se enquadra. Já jovens entre 18 e 24 anos costumam encontrar mais oferta nos chamados <em>cartões universitários</em> ou <em>starter</em>, com critérios suavizados em troca de limites menores.</p><p>Acima dos 35 anos, o histórico de crédito acumulado tende a ter peso maior que a idade nominal — emissores olham para os últimos 24 meses de comportamento financeiro. O que muda mesmo, conforme a faixa, é o conjunto de produtos que vale a pena comparar primeiro.</p>',
+            tips: [
+              'Mantenha documento, comprovante de endereço e dados cadastrais sempre atualizados antes de aplicar',
+              'De 18 a 24 anos: comece pelo banco onde já tem conta, especialmente se é correntista há mais de 6 meses',
+              'A partir dos 60: cartões consignados costumam ter as melhores taxas — vale comparar com bancos públicos',
+              'Em qualquer idade: histórico de pagamentos pesa mais do que renda alta com histórico ruim'
+            ]
+          }
+        },
+        { kind: 'capture' },
+        {
+          kind: 'choice',
+          id: 'spending',
+          eyebrow: 'Etapa 4 · Hábito de gasto',
+          title: 'Quanto você costuma gastar no cartão por mês?',
+          lead: 'Uma estimativa basta. Esse valor ajuda a apontar produtos com benefícios proporcionais ao seu volume.',
+          options: [
+            { value: 'lt500', label: 'Até R$ 500' },
+            { value: '500-2k', label: 'R$ 500 a R$ 2.000' },
+            { value: '2k-5k', label: 'R$ 2.000 a R$ 5.000' },
+            { value: '5k-15k', label: 'R$ 5.000 a R$ 15.000' },
+            { value: 'gt15k', label: 'Acima de R$ 15.000' }
+          ],
+          article: {
+            title: 'Volume de gastos: quando o cashback supera as milhas',
+            body: '<p>O volume mensal define se vale a pena pagar anuidade. A regra prática é simples: anuidade só compensa quando o benefício devolvido (cashback acumulado ou milhas convertidas em valor real) supera o custo. Para gastos abaixo de R$ 1.500/mês, cartões sem anuidade vencem na quase totalidade dos cenários.</p><p>De R$ 2.000 a R$ 5.000 mensais, programas de cashback de 1% a 2% começam a fazer sentido econômico. Acima de R$ 5.000, milhas e categorias premium passam a competir — desde que o usuário converta os pontos com inteligência (programas como Smiles, Latam Pass e Livelo costumam render entre R$ 25 e R$ 40 por mil pontos).</p>',
+            tips: [
+              'Cashback médio de 1%: R$ 2.000/mês × 12 = R$ 240/ano de retorno (considere isso ao decidir anuidade)',
+              'Milhas: 1.000 pontos rendem entre R$ 25 e R$ 40 — depende muito do programa e da época',
+              'Volumes altos abrem categorias com seguros, concierge e vantagens reais',
+              'Centralize gastos no mesmo cartão para acelerar acúmulo e atingir metas de bônus'
+            ]
+          }
+        },
+        {
+          kind: 'choice',
+          id: 'income',
+          eyebrow: 'Etapa 5 · Renda mensal',
+          title: 'Qual a sua faixa de renda atual?',
+          lead: 'A renda comprovada costuma ser o critério principal de análise dos emissores. Use o valor bruto.',
+          options: [
+            { value: 'lt2k', label: 'Até R$ 2.000' },
+            { value: '2k-5k', label: 'R$ 2.000 a R$ 5.000' },
+            { value: '5k-10k', label: 'R$ 5.000 a R$ 10.000' },
+            { value: '10k-20k', label: 'R$ 10.000 a R$ 20.000' },
+            { value: 'gt20k', label: 'Acima de R$ 20.000' },
+            { value: 'unsure', label: 'Prefiro não informar' }
+          ],
+          article: {
+            title: 'Como a renda é avaliada pelos emissores no Brasil',
+            body: '<p>A renda comprovada é o critério principal para definir o limite inicial e a categoria do cartão, mas não é apenas o valor que conta. Estabilidade da fonte, tipo de vínculo (CLT, autônomo, MEI, aposentado) e o histórico bancário recente pesam tanto quanto o salário bruto declarado.</p><p>Emissores rodam análise automatizada cruzando renda informada com movimentação bancária real, padrão de consumo e bureau de crédito. Por isso, declarar uma renda inflada raramente ajuda — se a movimentação não suporta, o algoritmo identifica e o pedido cai. O caminho oposto também vale: subdeclarar reduz limite que poderia ser oferecido.</p>',
+            tips: [
+              'Centralize sua renda em uma única conta bancária — emissores cruzam dados de movimentação',
+              'Mantenha 6 meses de extratos limpos e organizados antes de aplicar para um produto novo',
+              'Para autônomos e MEI: declare IRPF mesmo sendo isento — é prova oficial de renda',
+              'Após 6 meses de bom uso, vale solicitar aumento de limite (sem precisar pedir cartão novo)'
+            ]
+          }
+        },
+        {
+          kind: 'choice',
+          id: 'creditProfile',
+          eyebrow: 'Etapa 6 · Perfil de crédito',
+          title: 'Como está sua situação de crédito hoje?',
+          lead: 'Não há resposta certa. Cada perfil tem categorias indicadas — inclusive quem está reconstruindo o histórico.',
+          afterBadge: { id: 'PROFILE', label: 'Perfil Completo' },
+          options: [
+            { value: 'clean', label: 'Nome limpo, com bom histórico' },
+            { value: 'fair', label: 'Nome limpo, mas histórico curto' },
+            { value: 'thin', label: 'Quase nenhum histórico de crédito' },
+            { value: 'restricted', label: 'Nome com restrição (negativado)' },
+            { value: 'unsure', label: 'Não tenho certeza' }
+          ],
+          article: {
+            title: 'Por que o histórico pesa mais do que a renda',
+            body: '<p>Um histórico de crédito sólido transforma a análise de qualquer pedido. Pagamentos em dia, baixa utilização do limite (idealmente abaixo de 30%) e ausência de atrasos constroem reputação financeira ao longo do tempo. Quem está com nome restrito ou histórico curto não está fora do mercado — apenas tem um conjunto diferente de categorias para começar.</p><p>O Score do Serasa, SPC e Boa Vista é o termômetro mais usado pelos emissores. Acima de 700, a maioria dos produtos abre. Entre 500 e 700, há restrição em cartões premium mas continuam acessíveis cartões básicos e sem anuidade. Abaixo de 500 ou com restrição ativa, o caminho é cartão pré-pago, consignado ou um produto garantido por aplicação financeira.</p>',
+            tips: [
+              'Consulte gratuitamente seu Score no Serasa, SPC Brasil e Boa Vista antes de aplicar',
+              'Pague todas as contas até a data de vencimento — não só a fatura do cartão',
+              'Use no máximo 30% do limite total disponível em cada cartão ativo',
+              'Se negativado: negocie e quite as dívidas antigas antes de pedir cartão novo'
+            ]
+          }
+        },
+        { kind: 'tap', eyebrow: 'Etapa 7 · Mini-game', title: 'Toque nas estrelas que aparecerem!', lead: 'Você tem 8 segundos. Cada acerto adiciona XP. Não vale segurar — só clicar quando aparecer ⭐.' },
+        {
+          kind: 'choice',
+          id: 'paymentBehavior',
+          eyebrow: 'Etapa 8 · Comportamento de pagamento',
+          title: 'Como você costuma pagar a fatura?',
+          lead: 'Esse padrão influencia muito qual tipo de cartão te beneficia mais (ou te custa mais caro).',
+          options: [
+            { value: 'full', label: 'Sempre pago o valor total' },
+            { value: 'mostly', label: 'Quase sempre pago integral' },
+            { value: 'minimum', label: 'Costumo pagar o mínimo' },
+            { value: 'late', label: 'Já atrasei algumas vezes' },
+            { value: 'na', label: 'Ainda não tenho cartão' }
+          ],
+          article: {
+            title: 'Pagar o mínimo é um dos erros mais caros do orçamento brasileiro',
+            body: '<p>A taxa rotativa do cartão de crédito no Brasil é uma das mais altas do sistema financeiro mundial — pode passar de 400% ao ano em juros compostos. Pagar apenas o valor mínimo gera um efeito bola de neve em que a dívida pode dobrar em poucos meses, mesmo sem novas compras.</p><p>O comportamento de pagamento define se o cartão é uma ferramenta financeira ou uma armadilha. Quem paga integralmente todo mês transforma o cartão em alavanca: ganha cashback, milhas, prazo médio de 30 a 40 dias para pagar, e protege caixa. Quem paga só o mínimo está alugando dinheiro pelo preço mais alto disponível no mercado legal.</p>',
+            tips: [
+              'Programe débito automático da fatura integral — elimina esquecimento e atraso',
+              'Se não conseguir pagar tudo, parcele a fatura no próprio banco — juros menores que o rotativo',
+              'Evite saque na função crédito: a taxa começa no dia seguinte, sem prazo de carência',
+              'Configure alertas de vencimento 5 e 2 dias antes da data de pagamento'
+            ]
+          }
+        },
+        { kind: 'analysis' },
+        {
+          kind: 'choice',
+          id: 'mainGoal',
+          eyebrow: 'Etapa 10 · Objetivo principal',
+          title: 'Qual é o seu maior objetivo com o cartão?',
+          lead: 'Última decisão estratégica antes do diagnóstico final. Escolha o que mais importa pra você agora.',
+          options: [
+            { value: 'cashback', label: '💰 Receber cashback nas compras' },
+            { value: 'miles', label: '✈️ Acumular milhas para viajar' },
+            { value: 'noFee', label: '🪙 Não pagar anuidade' },
+            { value: 'build', label: '🌱 Construir ou reconstruir crédito' },
+            { value: 'premium', label: '💎 Ter benefícios premium e status' },
+            { value: 'limit', label: '📈 Aumentar meu limite disponível' }
+          ],
+          article: {
+            title: 'Definir um objetivo claro reduz o custo total do cartão',
+            body: '<p>Sem objetivo claro, qualquer oferta de cartão parece atrativa. Com objetivo definido, a comparação fica simples e o custo total cai. Quem busca cashback deve recusar cartões que pagam em pontos vinculados a um único parceiro. Quem busca milhas precisa concentrar gastos no programa certo — pulverizar reduz drasticamente o retorno. Quem quer construir histórico precisa de paciência e disciplina, não de status.</p><p>Trocar de cartão a cada novidade do mercado é um dos maiores erros financeiros silenciosos. Cada nova aplicação cria registro no bureau, e mudanças constantes confundem o algoritmo dos emissores. Ter no máximo 1 ou 2 cartões ativos, escolhidos com base em objetivo claro, costuma render mais que coleção de plásticos diferentes.</p>',
+            tips: [
+              'Escreva seu objetivo em uma frase: "quero economizar R$ X por ano via cashback"',
+              'Reavalie a cada 12 meses — objetivos e fase de vida mudam',
+              'Não troque de cartão a cada lançamento — perde-se mais em inconsistência do que se ganha',
+              'Concentre-se em 1 ou 2 cartões ativos no máximo para acumular benefícios reais'
+            ]
+          }
+        },
+        { kind: 'preReveal' }
+      ];
+
+      /* ---------- Render ---------- */
+      function render() {
+        const root = $('#stepRoot');
+        const header = $('#cardHeader');
+        const badges = $('#badgesStrip');
+
+        // AdSense: cada render = nova "pageview" virtual
+        pushVirtualUrl(state.step);
+        refreshAdZones();
+
+        // Welcome (step 0): sem header e sem painel ao vivo
+        const livePanel = $('#livePanel');
+        if (state.step === 0) {
+          header.hidden = true;
+          badges.hidden = true;
+          if (livePanel) livePanel.hidden = true;
+          stopBackgroundScan();
+        } else {
+          header.hidden = false;
+          renderBadges();
+          updateHeader();
+          if (livePanel && livePanel.hidden) {
+            livePanel.hidden = false;
+            // Primeiro feed item de boas-vindas
+            if (notifState.feed.length === 0) {
+              addFeedItem('🚀', 'Análise iniciada para seu perfil', 'discovery');
+              notifState.feed.push(1);
+              updatePanelCounters({ verified: 3, compatible: 1 });
+              advanceScan(3);
+            }
+          }
+          // Liga o tick em background — incrementa contadores enquanto
+          // o usuário lê o artigo educativo. Para automaticamente quando
+          // chega na Etapa 11 (pré-revelação), com mensagem de "concluído".
+          if (state.step >= TOTAL_STEPS) {
+            stopBackgroundScan({ markComplete: true });
+          } else {
+            startBackgroundScan();
+          }
+        }
+
+        // Reveal final
+        if (state.step > TOTAL_STEPS) {
+          root.innerHTML = '';
+          renderFinalReveal(root);
+          return;
+        }
+
+        const def = STEPS[state.step];
+        state.stepStartedAt = Date.now();
+        saveState();
+
+        // Dispara o trigger do AdSense no próximo tick — depois que o DOM
+        // do step novo já foi pintado e os <ins> das ad-zones existem
+        setTimeout(triggerAds, 80);
+
+        switch (def.kind) {
+          case 'welcome': return renderWelcome(root);
+          case 'visual': return renderVisual(root, def);
+          case 'choice': return renderChoice(root, def);
+          case 'tap': return renderTap(root, def);
+          case 'analysis': return renderAnalysis(root);
+          case 'preReveal': return renderPreReveal(root);
+          case 'capture': return renderCapture(root);
+        }
+      }
+
+      /* ---------- Welcome (2 perguntas-gancho) ---------- */
+      function renderWelcome(root) {
+        const a = state.answers || {};
+        root.innerHTML = `
         <div class="welcome">
           <div class="trophy" aria-hidden="true">🏆</div>
-          <h1>Descubra qual <span class="hl">categoria de cartão</span> mais combina com seu perfil</h1>
-          <p>Em 11 etapas curtas a Arthlens monta um diagnóstico editorial baseado nas suas respostas e indica as categorias com maior compatibilidade — sem promessa de aprovação, sem consulta a bureaus.</p>
+          <h1>Descubra a <span class="hl">categoria de cartão</span> mais compatível com seu perfil</h1>
+          <p>Diagnóstico editorial em 11 etapas curtas. A Arthlens cruza suas respostas com a base editorial e revela as categorias mais alinhadas ao seu momento — sem promessa de aprovação, sem consulta a bureaus.</p>
           <div class="seal-row">
             <span class="seal">🔒 100% seguro</span>
             <span class="seal">⚡ Cerca de 3 minutos</span>
@@ -1368,37 +3157,118 @@
             </span>
             <strong id="liveCount">47.293</strong> leitores já completaram o diagnóstico hoje.
           </div>
-          <button class="btn btn-gold pulse" id="startBtn">🚀 Começar diagnóstico</button>
-          <p class="welcome-disclaimer">Conteúdo editorial. Não consultamos SPC/Serasa. Você poderá receber o detalhamento no e-mail ao final.</p>
+
+          ${makeInlineAdSlot('Publicidade · Conteúdo relacionado')}
+
+          <div class="welcome-q" style="text-align:left;margin-top:6px;">
+            <div class="step-eyebrow" style="margin-bottom:4px;">Pergunta rápida</div>
+            <h2 style="font-size:16px;font-weight:800;color:var(--ink);margin-bottom:10px;line-height:1.3;">Você está com nome restrito (negativado)?</h2>
+            <div class="options" role="radiogroup" aria-label="Status de bureau">
+              ${[
+            { v: 'yes', l: 'Sim, estou negativado' },
+            { v: 'no', l: 'Não, meu nome está limpo' },
+            { v: 'unsure', l: 'Não tenho certeza' }
+          ].map(o => `
+                <label class="option ${a.bureauStatus === o.v ? 'is-selected' : ''}" tabindex="0" data-q="bureauStatus" data-v="${o.v}">
+                  <span class="radio" aria-hidden="true"></span>
+                  <span class="text">${o.l}</span>
+                </label>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="welcome-q" style="text-align:left;margin-top:14px;">
+            <div class="step-eyebrow" style="margin-bottom:4px;">Pergunta rápida</div>
+            <h2 style="font-size:16px;font-weight:800;color:var(--ink);margin-bottom:10px;line-height:1.3;">Qual limite de cartão você gostaria de alcançar?</h2>
+            <div class="options" role="radiogroup" aria-label="Limite desejado">
+              ${[
+            { v: 'lt1k', l: 'Até R$ 1.000' },
+            { v: '1k-3k', l: 'De R$ 1.000 a R$ 3.000' },
+            { v: '3k-7k', l: 'De R$ 3.000 a R$ 7.000' },
+            { v: 'gt7k', l: 'Mais de R$ 7.000' }
+          ].map(o => `
+                <label class="option ${a.targetLimit === o.v ? 'is-selected' : ''}" tabindex="0" data-q="targetLimit" data-v="${o.v}">
+                  <span class="radio" aria-hidden="true"></span>
+                  <span class="text">${o.l}</span>
+                </label>
+              `).join('')}
+            </div>
+          </div>
+
+          <button class="btn btn-gold pulse" id="startBtn" style="margin-top:14px;" ${a.bureauStatus && a.targetLimit ? '' : 'disabled'}>🚀 Começar diagnóstico</button>
+          <p class="welcome-disclaimer">Conteúdo editorial. Não consultamos SPC/Serasa nem garantimos limite — esta é uma análise informativa para orientar sua escolha.</p>
         </div>
       `;
 
-      // Contador animado
-      const liveCount = $('#liveCount');
-      let n = 47000;
-      const target = 47293 + Math.floor(Math.random() * 80);
-      const t = setInterval(() => {
-        n += Math.ceil((target - n) / 12);
-        liveCount.textContent = n.toLocaleString('pt-BR');
-        if (n >= target) { liveCount.textContent = target.toLocaleString('pt-BR'); clearInterval(t); }
-      }, 32);
+        // Contador animado
+        const liveCount = $('#liveCount');
+        let n = 47000;
+        const target = 47293 + Math.floor(Math.random() * 80);
+        const t = setInterval(() => {
+          n += Math.ceil((target - n) / 12);
+          liveCount.textContent = n.toLocaleString('pt-BR');
+          if (n >= target) { liveCount.textContent = target.toLocaleString('pt-BR'); clearInterval(t); }
+        }, 32);
 
-      $('#startBtn').addEventListener('click', () => {
-        unlockBadge('START', BADGE_META.START.label);
-        state.step = 1;
-        saveState();
-        addXp(10, $('#startBtn'));
-        render();
-      });
-    }
+        // Bind das 2 perguntas-gancho
+        const opts = root.querySelectorAll('.welcome-q .option');
+        const startBtn = $('#startBtn');
+        opts.forEach(el => {
+          el.addEventListener('click', () => {
+            const q = el.dataset.q, v = el.dataset.v;
+            // Remove seleção apenas dos irmãos da mesma pergunta
+            el.parentElement.querySelectorAll('.option').forEach(o => o.classList.remove('is-selected'));
+            el.classList.add('is-selected');
+            state.answers[q] = v;
+            saveState();
+            const ready = state.answers.bureauStatus && state.answers.targetLimit;
+            startBtn.disabled = !ready;
+            // Quando ambas estiverem respondidas, conduz pro CTA
+            if (ready) nudgeToCTA(startBtn);
+          });
+          el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+          });
+        });
 
-    /* ---------- Choice (radios) ---------- */
-    function renderChoice(root, def) {
-      const saved = state.answers[def.id] || '';
-      root.innerHTML = `
+        startBtn.addEventListener('click', () => {
+          if (!state.answers.bureauStatus || !state.answers.targetLimit) return;
+          unlockBadge('START', BADGE_META.START.label);
+          state.step = 1;
+          saveState();
+          addXp(10, startBtn);
+          render();
+        });
+      }
+
+      /* ---------- Helper: bloco de artigo editorial ---------- */
+      function renderArticleBlock(art) {
+        if (!art) return '';
+        const tips = (art.tips || []).map(t => `<li>${escapeHtml(t)}</li>`).join('');
+        return `
+        <aside class="article-block" aria-label="Análise editorial">
+          <div class="article-eyebrow">📚 Análise editorial · Arthlens</div>
+          <h3>${escapeHtml(art.title)}</h3>
+          ${art.body || ''}
+          ${tips ? `<span class="tips-tag">Como aumentar suas chances</span><ul class="tips">${tips}</ul>` : ''}
+        </aside>
+      `;
+      }
+
+      /* ---------- Helper: saudação personalizada ---------- */
+      function greet() {
+        const n = (state.contact.name || '').split(' ')[0].trim();
+        return n ? `${n}, ` : '';
+      }
+
+      /* ---------- Choice (radios) ---------- */
+      function renderChoice(root, def) {
+        const saved = state.answers[def.id] || '';
+        const personalLead = greet() ? greet() + def.lead.charAt(0).toLowerCase() + def.lead.slice(1) : def.lead;
+        root.innerHTML = `
         <div class="step-eyebrow">${escapeHtml(def.eyebrow)}</div>
         <h1 class="step-title">${escapeHtml(def.title)}</h1>
-        <p class="step-lead">${escapeHtml(def.lead)}</p>
+        <p class="step-lead">${escapeHtml(personalLead)}</p>
         <div class="options" role="radiogroup" aria-label="${escapeHtml(def.title)}">
           ${def.options.map(o => `
             <label class="option ${saved === o.value ? 'is-selected' : ''}" tabindex="0" data-value="${escapeHtml(o.value)}">
@@ -1407,41 +3277,45 @@
             </label>
           `).join('')}
         </div>
+        ${renderArticleBlock(def.article)}
+        ${makeInlineAdSlot('Publicidade · Conteúdo relacionado')}
         <div class="actions-row">
           <button class="btn btn-ghost" data-back>← Voltar</button>
           <button class="btn btn-primary" data-next ${saved ? '' : 'disabled'}>Continuar →</button>
         </div>
       `;
 
-      const opts = root.querySelectorAll('.option');
-      const next = root.querySelector('[data-next]');
-      opts.forEach(el => {
-        el.addEventListener('click', () => {
-          opts.forEach(o => o.classList.remove('is-selected'));
-          el.classList.add('is-selected');
-          state.answers[def.id] = el.dataset.value;
-          saveState();
-          next.disabled = false;
+        const opts = root.querySelectorAll('.option');
+        const next = root.querySelector('[data-next]');
+        opts.forEach(el => {
+          el.addEventListener('click', () => {
+            opts.forEach(o => o.classList.remove('is-selected'));
+            el.classList.add('is-selected');
+            state.answers[def.id] = el.dataset.value;
+            saveState();
+            next.disabled = false;
+            nudgeToCTA(next);
+          });
+          el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+          });
         });
-        el.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+        root.querySelector('[data-back]').addEventListener('click', () => goPrev());
+        next.addEventListener('click', () => {
+          if (!state.answers[def.id]) return;
+          rewardForAnswer(def, next);
+          goNext();
         });
-      });
-      root.querySelector('[data-back]').addEventListener('click', () => goPrev());
-      next.addEventListener('click', () => {
-        if (!state.answers[def.id]) return;
-        rewardForAnswer(def, next);
-        goNext();
-      });
-    }
+      }
 
-    /* ---------- Visual cards (mini-game 1) ---------- */
-    function renderVisual(root, def) {
-      const saved = state.answers[def.id] || '';
-      root.innerHTML = `
+      /* ---------- Visual cards (mini-game 1) ---------- */
+      function renderVisual(root, def) {
+        const saved = state.answers[def.id] || '';
+        const personalLead = greet() ? greet() + def.lead.charAt(0).toLowerCase() + def.lead.slice(1) : def.lead;
+        root.innerHTML = `
         <div class="step-eyebrow">${escapeHtml(def.eyebrow)}</div>
         <h1 class="step-title">${escapeHtml(def.title)}</h1>
-        <p class="step-lead">${escapeHtml(def.lead)}</p>
+        <p class="step-lead">${escapeHtml(personalLead)}</p>
         <div class="visual-grid">
           ${def.options.map(o => `
             <div class="visual-card ${saved === o.value ? 'is-selected' : ''}" tabindex="0" data-value="${escapeHtml(o.value)}">
@@ -1451,42 +3325,46 @@
             </div>
           `).join('')}
         </div>
+        ${renderArticleBlock(def.article)}
+        ${makeInlineAdSlot('Publicidade · Conteúdo relacionado')}
         <div class="actions-row">
           <button class="btn btn-ghost" data-back>← Voltar</button>
           <button class="btn btn-primary" data-next ${saved ? '' : 'disabled'}>Continuar →</button>
         </div>
       `;
 
-      const cards = root.querySelectorAll('.visual-card');
-      const next  = root.querySelector('[data-next]');
-      cards.forEach(el => {
-        el.addEventListener('click', () => {
-          cards.forEach(o => o.classList.remove('is-selected'));
-          el.classList.add('is-selected');
-          state.answers[def.id] = el.dataset.value;
-          saveState();
-          next.disabled = false;
+        const cards = root.querySelectorAll('.visual-card');
+        const next = root.querySelector('[data-next]');
+        cards.forEach(el => {
+          el.addEventListener('click', () => {
+            cards.forEach(o => o.classList.remove('is-selected'));
+            el.classList.add('is-selected');
+            state.answers[def.id] = el.dataset.value;
+            saveState();
+            next.disabled = false;
+            nudgeToCTA(next);
+          });
+          el.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+          });
         });
-        el.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+        root.querySelector('[data-back]').addEventListener('click', goPrev);
+        next.addEventListener('click', () => {
+          if (!state.answers[def.id]) return;
+          rewardForAnswer(def, next);
+          goNext();
         });
-      });
-      root.querySelector('[data-back]').addEventListener('click', goPrev);
-      next.addEventListener('click', () => {
-        if (!state.answers[def.id]) return;
-        rewardForAnswer(def, next);
-        goNext();
-      });
-    }
+      }
 
-    /* ---------- Tap challenge (mini-game 2) ---------- */
-    function renderTap(root, def) {
-      state.tapScore = 0;
-      let timeLeft = 8;
-      let activeCell = -1;
-      let interval, timer;
+      /* ---------- Tap challenge (mini-game 2) ---------- */
+      function renderTap(root, def) {
+        state.tapScore = 0;
+        let timeLeft = 8;
+        let activeCell = -1;
+        let interval, timer;
+        let started = false;
 
-      root.innerHTML = `
+        root.innerHTML = `
         <div class="step-eyebrow">${escapeHtml(def.eyebrow)}</div>
         <h1 class="step-title">${escapeHtml(def.title)}</h1>
         <p class="step-lead">${escapeHtml(def.lead)}</p>
@@ -1498,118 +3376,119 @@
           <div class="tap-board" id="tapBoard">
             ${Array(9).fill(0).map((_, i) => `<div class="tap-cell" data-i="${i}"></div>`).join('')}
           </div>
-          <button class="btn btn-primary" id="tapStart">▶️ Começar mini-game</button>
+          <p style="font-size:12.5px;color:var(--muted);text-align:center;margin-top:6px;">👆 Toque na ⭐ para começar</p>
         </div>
       `;
 
-      const board = $('#tapBoard');
-      const cells = board.querySelectorAll('.tap-cell');
-      const scoreEl = $('#tapScore');
-      const timerEl = $('#tapTimer');
-      const startBtn = $('#tapStart');
+        const board = $('#tapBoard');
+        const cells = board.querySelectorAll('.tap-cell');
+        const scoreEl = $('#tapScore');
+        const timerEl = $('#tapTimer');
 
-      function spawnStar() {
-        cells.forEach(c => { c.classList.remove('is-active'); c.textContent = ''; });
-        const i = Math.floor(Math.random() * 9);
-        activeCell = i;
-        cells[i].classList.add('is-active');
-        cells[i].textContent = '⭐';
-      }
+        function placeStar(idx) {
+          cells.forEach(c => { c.classList.remove('is-active'); c.textContent = ''; });
+          activeCell = (idx === undefined) ? Math.floor(Math.random() * 9) : idx;
+          cells[activeCell].classList.add('is-active');
+          cells[activeCell].textContent = '⭐';
+        }
 
-      function endGame() {
-        clearInterval(interval);
-        clearInterval(timer);
-        cells.forEach(c => { c.classList.remove('is-active'); c.textContent = ''; });
-        // Recompensa fixa de mini-game (+30) + bônus por acertos
-        const bonus = Math.min(state.tapScore * 2, 20);
-        addXp(30 + bonus, $('#xpCount'));
-        toast(`🎯 ${state.tapScore} acertos · +${30 + bonus} XP`);
-        // Avança após pequena pausa
-        setTimeout(() => goNext(), 700);
-      }
+        function spawnStar() { placeStar(); }
 
-      function startGame() {
-        startBtn.disabled = true;
-        startBtn.textContent = 'Mini-game em andamento…';
-        spawnStar();
-        interval = setInterval(spawnStar, 850);
-        timer = setInterval(() => {
-          timeLeft--;
-          timerEl.textContent = timeLeft;
-          if (timeLeft <= 0) endGame();
-        }, 1000);
-      }
+        function endGame() {
+          clearInterval(interval);
+          clearInterval(timer);
+          cells.forEach(c => { c.classList.remove('is-active'); c.textContent = ''; });
+          const bonus = Math.min(state.tapScore * 2, 20);
+          addXp(30 + bonus, $('#xpCount'));
+          toast(`🎯 ${state.tapScore} acertos · +${30 + bonus} XP`);
+          setTimeout(() => goNext(), 700);
+        }
 
-      cells.forEach(c => {
-        c.addEventListener('click', () => {
-          const i = parseInt(c.dataset.i, 10);
-          if (i === activeCell && c.classList.contains('is-active')) {
-            c.classList.remove('is-active');
-            c.classList.add('is-hit');
-            c.textContent = '✓';
-            state.tapScore++;
-            scoreEl.textContent = state.tapScore;
-            activeCell = -1;
-            setTimeout(() => c.classList.remove('is-hit'), 250);
-          }
+        function startGame() {
+          if (started) return;
+          started = true;
+          interval = setInterval(spawnStar, 850);
+          timer = setInterval(() => {
+            timeLeft--;
+            timerEl.textContent = timeLeft;
+            if (timeLeft <= 0) endGame();
+          }, 1000);
+        }
+
+        cells.forEach(c => {
+          c.addEventListener('click', () => {
+            const i = parseInt(c.dataset.i, 10);
+            if (i === activeCell && c.classList.contains('is-active')) {
+              // Primeiro clique inicia o jogo
+              if (!started) startGame();
+              c.classList.remove('is-active');
+              c.classList.add('is-hit');
+              c.textContent = '✓';
+              state.tapScore++;
+              scoreEl.textContent = state.tapScore;
+              activeCell = -1;
+              setTimeout(() => c.classList.remove('is-hit'), 250);
+            }
+          });
         });
-      });
 
-      startBtn.addEventListener('click', startGame);
-    }
+        // Estrela inicial visível pra convidar o clique
+        placeStar(4);
+      }
 
-    /* ---------- Analysis ---------- */
-    function renderAnalysis(root) {
-      const items = [
-        '📊 Cruzando seu estilo de uso e hábitos de gasto',
-        '⚖️ Comparando com 2.847 perfis editoriais semelhantes',
-        '🏛️ Filtrando categorias regulamentadas no Brasil',
-        '🎯 Calculando o índice de compatibilidade',
-        '✨ Montando seu diagnóstico final'
-      ];
-      root.innerHTML = `
+      /* ---------- Analysis ---------- */
+      function renderAnalysis(root) {
+        const items = [
+          '📊 Cruzando seu estilo de uso e hábitos de gasto',
+          '⚖️ Comparando com 2.847 perfis editoriais semelhantes',
+          '🏛️ Filtrando categorias regulamentadas no Brasil',
+          '🎯 Calculando o índice de compatibilidade',
+          '✨ Montando seu diagnóstico final'
+        ];
+        root.innerHTML = `
         <div class="analysis">
           <div class="analysis-spinner" aria-hidden="true"></div>
           <h2>Analisando seu perfil</h2>
           <p class="analysis-subtitle">Não feche a tela. Estamos cruzando suas respostas com a base editorial.</p>
           <ul class="analysis-checklist" id="aChecklist">
             ${items.map((t, i) => `
-              <li data-i="${i}"><span class="check-ic">${i+1}</span><span>${escapeHtml(t)}</span></li>
+              <li data-i="${i}"><span class="check-ic">${i + 1}</span><span>${escapeHtml(t)}</span></li>
             `).join('')}
           </ul>
+          ${makeInlineAdSlot('Publicidade · Enquanto a análise roda')}
         </div>
       `;
-      const lis = root.querySelectorAll('.analysis-checklist li');
-      let i = 0;
-      // Marca o primeiro como ativo de cara
-      if (lis[0]) lis[0].classList.add('is-active');
-      const tick = setInterval(() => {
-        const cur = lis[i];
-        if (cur) {
-          cur.classList.remove('is-active');
-          cur.classList.add('is-done');
-          cur.querySelector('.check-ic').textContent = '✓';
-        }
-        i++;
-        if (i >= lis.length) {
-          clearInterval(tick);
-          unlockBadge('VIP', BADGE_META.VIP.label);
-          addXp(50, $('#xpCount'));
-          setTimeout(() => goNext(), 700);
-          return;
-        }
-        if (lis[i]) lis[i].classList.add('is-active');
-      }, 1900);
-    }
+        const lis = root.querySelectorAll('.analysis-checklist li');
+        let i = 0;
+        // Marca o primeiro como ativo de cara
+        if (lis[0]) lis[0].classList.add('is-active');
+        const tick = setInterval(() => {
+          const cur = lis[i];
+          if (cur) {
+            cur.classList.remove('is-active');
+            cur.classList.add('is-done');
+            cur.querySelector('.check-ic').textContent = '✓';
+          }
+          i++;
+          if (i >= lis.length) {
+            clearInterval(tick);
+            unlockBadge('VIP', BADGE_META.VIP.label);
+            addXp(50, $('#xpCount'));
+            setTimeout(() => goNext(), 700);
+            return;
+          }
+          if (lis[i]) lis[i].classList.add('is-active');
+        }, 1900);
+      }
 
-    /* ---------- Pré-revelação (passo 10) ---------- */
-    function renderPreReveal(root) {
-      const matches = computeMatches();
-      const first = matches[0] || { ico: '✨', title: 'Categoria compatível', desc: '' };
-      root.innerHTML = `
-        <div class="step-eyebrow">Etapa 10 · Quase lá</div>
+      /* ---------- Pré-revelação (Etapa 11 · última do funil) ---------- */
+      function renderPreReveal(root) {
+        const matches = computeMatches();
+        const first = matches[0] || { ico: '✨', title: 'Categoria compatível', desc: '' };
+        root.innerHTML = `
+        <div class="step-eyebrow">Etapa 11 · Quase lá</div>
         <h1 class="step-title">Encontramos <span style="color:var(--gold)">${matches.length}</span> categorias compatíveis com seu perfil</h1>
-        <p class="step-lead">Veja a primeira a seguir. As demais ficarão disponíveis quando você desbloquear o diagnóstico completo na próxima etapa.</p>
+        <p class="step-lead">Veja a primeira a seguir. As demais ficarão disponíveis ao desbloquear o diagnóstico completo.</p>
         <div class="preview-list">
           <div class="preview-item is-revealed">
             <div class="preview-ico">${first.ico}</div>
@@ -1629,36 +3508,54 @@
             </div>
           `).join('')}
         </div>
-        <button class="btn btn-gold pulse" id="continueBtn">Desbloquear diagnóstico completo →</button>
+        ${makeInlineAdSlot('Publicidade · Enquanto carregamos seu diagnóstico')}
+        <button class="btn btn-gold pulse" id="continueBtn">🌟 Desbloquear diagnóstico completo</button>
         <p class="inline-disclaimer">Categorias indicadas com base nas suas respostas. Não constitui oferta nem garantia de aprovação.</p>
       `;
-      unlockBadge('FINALIST', BADGE_META.FINALIST.label);
-      $('#continueBtn').addEventListener('click', () => {
-        addXp(15, $('#continueBtn'));
-        goNext();
-      });
-    }
+        unlockBadge('FINALIST', BADGE_META.FINALIST.label);
+        $('#continueBtn').addEventListener('click', () => {
+          // ===========================================================
+          // HOOK BACKEND — diagnóstico concluído (lead qualificado):
+          // Payload sugerido:
+          //   { name, email, consent, answers, xp, level, badges,
+          //     completedAt, source: 'descobrir-cartao', stage: 'completed' }
+          // ===========================================================
+          // fetch('/api/funnel-leads', { method:'POST', headers:{'Content-Type':'application/json'},
+          //   body: JSON.stringify({ ...state.contact, answers: state.answers,
+          //     xp: state.xp, level: LEVELS[state.levelIndex].name,
+          //     badges: state.badges, stage: 'completed' }) });
+          state.completedAt = Date.now();
+          saveState();
+          unlockBadge('UNLOCKED', BADGE_META.UNLOCKED.label);
+          addXp(40, $('#continueBtn'));
+          shootConfetti(160);
+          celebrateCard();
+          state.step = TOTAL_STEPS + 1;
+          saveState();
+          setTimeout(render, 700);
+        });
+      }
 
-    /* ---------- Captura de e-mail (passo 11) ---------- */
-    function renderCapture(root) {
-      root.innerHTML = `
-        <div class="step-eyebrow">Etapa 11 · Receber diagnóstico</div>
-        <h1 class="step-title">Seu diagnóstico está pronto</h1>
-        <p class="step-lead">Informe seu nome e e-mail para liberar a análise editorial completa nesta tela e receber uma cópia em seu e-mail.</p>
+      /* ---------- Captura nome + e-mail (Etapa 1 · após perguntas-gancho) ---------- */
+      function renderCapture(root) {
+        root.innerHTML = `
+        <div class="step-eyebrow">Etapa 3 · Sua análise está em andamento</div>
+        <h1 class="step-title">Pra continuar, identifique-se</h1>
+        <p class="step-lead">Vamos personalizar seu diagnóstico e enviar uma cópia detalhada por e-mail ao final. Leva menos de 30 segundos.</p>
         <form id="captureForm" novalidate>
           <div class="field">
             <label for="cName">Como podemos te chamar?</label>
-            <input id="cName" name="name" type="text" autocomplete="given-name" required value="${escapeHtml(state.contact.name || '')}">
+            <input id="cName" name="name" type="text" autocomplete="given-name" required placeholder="Seu primeiro nome" value="${escapeHtml(state.contact.name || '')}">
           </div>
           <div class="field">
             <label for="cEmail">Seu melhor e-mail</label>
-            <input id="cEmail" name="email" type="email" autocomplete="email" required value="${escapeHtml(state.contact.email || '')}">
+            <input id="cEmail" name="email" type="email" autocomplete="email" required placeholder="voce@email.com" value="${escapeHtml(state.contact.email || '')}">
           </div>
           <label class="checkbox-row">
             <input type="checkbox" name="consent" required ${state.contact.consent ? 'checked' : ''}>
             <span>Concordo em receber por e-mail conteúdos educativos da Arthlens sobre cartões e crédito. Posso descadastrar a qualquer momento.</span>
           </label>
-          <button class="btn btn-gold pulse" type="submit">🌟 Liberar meu diagnóstico</button>
+          <button class="btn btn-gold pulse" type="submit">Continuar minha análise →</button>
           <div class="secure-row">
             <span>🔒 TLS</span>
             <span>📭 Sem spam</span>
@@ -1667,203 +3564,299 @@
         </form>
         <p class="inline-disclaimer">A Arthlens é editorial. Não compartilhamos seus dados com instituições financeiras nem brokers.</p>
       `;
-      $('#captureForm').addEventListener('submit', onCaptureSubmit);
-    }
-
-    function onCaptureSubmit(e) {
-      e.preventDefault();
-      const fd = new FormData(e.currentTarget);
-      const name = (fd.get('name') || '').toString().trim();
-      const email = (fd.get('email') || '').toString().trim();
-      const consent = !!fd.get('consent');
-      if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !consent) {
-        toast('Preencha nome, e-mail válido e marque o consentimento.');
-        return;
+        $('#captureForm').addEventListener('submit', onCaptureSubmit);
       }
-      state.contact = { name, email, consent };
-      state.completedAt = Date.now();
-      saveState();
 
-      // ===========================================================
-      // HOOK BACKEND — substituir o trecho abaixo pela integração:
-      //   - Brevo:      https://api.brevo.com/v3/contacts
-      //   - Mailchimp:  https://<DC>.api.mailchimp.com/3.0/lists/...
-      //   - Formspree:  fetch('https://formspree.io/f/<id>', { method:'POST', body: JSON.stringify(payload) })
-      // Payload sugerido:
-      //   { name, email, consent, answers: state.answers, xp: state.xp,
-      //     level: LEVELS[state.levelIndex].name, badges: state.badges,
-      //     completedAt: state.completedAt, source: 'descobrir-cartao' }
-      // ===========================================================
-      // fetch('/api/funnel-leads', { method:'POST', headers:{'Content-Type':'application/json'},
-      //   body: JSON.stringify({ name, email, consent, answers: state.answers,
-      //     xp: state.xp, level: LEVELS[state.levelIndex].name, badges: state.badges }) });
+      function onCaptureSubmit(e) {
+        e.preventDefault();
+        const fd = new FormData(e.currentTarget);
+        const name = (fd.get('name') || '').toString().trim();
+        const email = (fd.get('email') || '').toString().trim();
+        const consent = !!fd.get('consent');
+        if (!name || name.length < 2) { toast('Informe seu nome para personalizar o diagnóstico.'); return; }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { toast('Informe um e-mail válido.'); return; }
+        if (!consent) { toast('Marque o consentimento para continuar.'); return; }
 
-      unlockBadge('UNLOCKED', BADGE_META.UNLOCKED.label);
-      addXp(40, $('button[type="submit"]'));
-      shootConfetti(160);
-      celebrateCard();
-      state.step = TOTAL_STEPS + 1;
-      saveState();
-      setTimeout(render, 700);
-    }
+        state.contact = { name, email, consent };
+        saveState();
 
-    /* ---------- Reveal final (passo 12) ---------- */
-    function renderFinalReveal(root) {
-      const matches = computeMatches();
-      const userName = (state.contact.name || '').split(' ')[0];
-      $('#cardHeader').hidden = false;
-      updateHeader();
-      root.innerHTML = `
+        // ===========================================================
+        // HOOK BACKEND — captura inicial (lead aquecido):
+        //   - Brevo:      https://api.brevo.com/v3/contacts
+        //   - Mailchimp:  https://<DC>.api.mailchimp.com/3.0/lists/...
+        //   - Formspree:  fetch('https://formspree.io/f/<id>', { method:'POST', body: JSON.stringify(payload) })
+        // Payload sugerido:
+        //   { name, email, consent, answers: state.answers, source: 'descobrir-cartao', stage: 'opt-in' }
+        // ===========================================================
+        // fetch('/api/funnel-leads', { method:'POST', headers:{'Content-Type':'application/json'},
+        //   body: JSON.stringify({ name, email, consent, answers: state.answers, stage: 'opt-in' }) });
+
+        addXp(15, e.submitter || $('button[type="submit"]'));
+        goNext();
+      }
+
+      /* ---------- Reveal final (passo 12) ---------- */
+      function renderFinalReveal(root) {
+        const matches = computeMatches();
+        const userName = (state.contact.name || '').split(' ')[0];
+        $('#cardHeader').hidden = false;
+        updateHeader();
+        // Insere ad in-feed entre cada par de match-cards
+        const matchHtml = matches.map((m, i) => {
+          let html = `
+            <div class="match-card">
+              <div class="ico">${m.ico}</div>
+              <div class="body">
+                <h4>${escapeHtml(m.title)}</h4>
+                <p>${escapeHtml(m.desc)}</p>
+                <span class="score-tag">Compatibilidade ${m.score}%</span>
+              </div>
+            </div>
+          `;
+          // Após o 1º e 3º card, injeta um ad inline
+          if (i === 0 || i === 2) {
+            html += makeInlineAdSlot('Patrocinado · Conteúdo relacionado');
+          }
+          return html;
+        }).join('');
+
+        root.innerHTML = `
         <div class="reveal-host">
           <div class="crown" aria-hidden="true">👑</div>
           <h2>${userName ? userName + ', seu ' : 'Seu '}<span class="hl">diagnóstico está pronto</span></h2>
           <p>Com base nas suas respostas, estas são as <strong>categorias de cartão mais compatíveis</strong> com seu perfil agora. Uma cópia foi enviada para <strong>${escapeHtml(state.contact.email || 'seu e-mail')}</strong>.</p>
+          ${makeInlineAdSlot('Publicidade · Topo do diagnóstico')}
           <div class="matches">
-            ${matches.map(m => `
-              <div class="match-card">
-                <div class="ico">${m.ico}</div>
-                <div class="body">
-                  <h4>${escapeHtml(m.title)}</h4>
-                  <p>${escapeHtml(m.desc)}</p>
-                  <span class="score-tag">Compatibilidade ${m.score}%</span>
-                </div>
-              </div>
-            `).join('')}
+            ${matchHtml}
           </div>
+          ${makeInlineAdSlot('Publicidade · Antes da próxima ação')}
           <div class="reveal-cta-row">
-            <a class="btn btn-gold" href="/br/">📚 Abrir o guia editorial completo</a>
-            <button class="btn btn-ghost" id="restartBtn">↻ Refazer com outras respostas</button>
+            <button class="btn btn-gold pulse" id="restartBtn">🔄 Fazer um novo diagnóstico</button>
+            <a class="btn btn-ghost" href="/br/" style="text-align:center;">📚 Abrir guia editorial em arthlens.com/br</a>
           </div>
-          <p class="inline-disclaimer">As categorias acima são indicações editoriais. Não somos instituição financeira. A análise final, requisitos e aprovação dependem exclusivamente do emissor de cada cartão.</p>
+          <p class="inline-disclaimer">Refazer com novas respostas pode revelar combinações diferentes. As categorias acima são indicações editoriais — não somos instituição financeira e a análise final depende do emissor de cada cartão.</p>
         </div>
       `;
-      $('#restartBtn').addEventListener('click', resetAll);
-    }
-
-    /* ---------- Compute matches (lógica de scoring) ---------- */
-    const CATEGORIES = [
-      { id: 'noFee',     ico: '🪙', title: 'Cartões sem anuidade',
-        desc: 'Sem custo fixo mensal. Bom pra quem quer reduzir despesas e não usa muitos benefícios.' },
-      { id: 'cashback',  ico: '💰', title: 'Cartões com cashback',
-        desc: 'Devolvem parte do valor das compras. Combina com quem paga a fatura integral.' },
-      { id: 'miles',     ico: '✈️', title: 'Cartões de milhas e viagens',
-        desc: 'Acumulam pontos em programas aéreos. Indicados pra quem viaja com regularidade.' },
-      { id: 'starter',   ico: '🌱', title: 'Cartões para construir crédito',
-        desc: 'Limites menores e critérios mais acessíveis. Foco em fortalecer o histórico.' },
-      { id: 'premium',   ico: '💎', title: 'Cartões premium / black',
-        desc: 'Salas VIP, concierge, seguros e benefícios exclusivos. Renda comprovada exigida.' },
-      { id: 'restricted',ico: '🛟', title: 'Cartões para nome com restrição',
-        desc: 'Pré-pagos e consignados. Funcionam mesmo com nome negativado.' }
-    ];
-
-    function computeMatches() {
-      const a = state.answers || {};
-      const score = {};
-      CATEGORIES.forEach(c => score[c.id] = 30);
-
-      // Estilo
-      if (a.style === 'daily')    { score.cashback += 25; score.noFee += 20; }
-      if (a.style === 'travel')   { score.miles += 35; score.premium += 12; }
-      if (a.style === 'premium')  { score.premium += 35; score.miles += 15; }
-      if (a.style === 'starter')  { score.starter += 35; score.noFee += 18; }
-
-      // Gasto
-      if (a.spending === 'lt500')   { score.noFee += 15; score.starter += 12; }
-      if (a.spending === '500-2k')  { score.cashback += 10; score.noFee += 10; }
-      if (a.spending === '2k-5k')   { score.cashback += 18; score.miles += 8; }
-      if (a.spending === '5k-15k')  { score.miles += 18; score.premium += 18; score.cashback += 8; }
-      if (a.spending === 'gt15k')   { score.premium += 30; score.miles += 18; }
-
-      // Renda
-      if (a.income === 'lt2k')      { score.starter += 20; score.noFee += 15; score.restricted += 8; }
-      if (a.income === '2k-5k')     { score.noFee += 15; score.cashback += 10; }
-      if (a.income === '5k-10k')    { score.cashback += 12; score.miles += 12; }
-      if (a.income === '10k-20k')   { score.premium += 20; score.miles += 18; }
-      if (a.income === 'gt20k')     { score.premium += 35; score.miles += 22; }
-
-      // Perfil de crédito
-      if (a.creditProfile === 'clean')      { score.premium += 15; score.cashback += 10; score.miles += 10; }
-      if (a.creditProfile === 'fair')       { score.cashback += 12; score.noFee += 12; }
-      if (a.creditProfile === 'thin')       { score.starter += 30; score.noFee += 15; }
-      if (a.creditProfile === 'restricted') { score.restricted += 45; score.starter += 18; score.premium = 5; score.miles = 8; }
-      if (a.creditProfile === 'unsure')     { score.starter += 12; score.noFee += 10; }
-
-      // Pagamento
-      if (a.paymentBehavior === 'full')    { score.cashback += 12; score.miles += 10; score.premium += 8; }
-      if (a.paymentBehavior === 'mostly')  { score.cashback += 10; score.noFee += 8; }
-      if (a.paymentBehavior === 'minimum') { score.noFee += 15; score.starter += 10; score.premium -= 8; }
-      if (a.paymentBehavior === 'late')    { score.restricted += 15; score.starter += 12; score.premium -= 12; }
-      if (a.paymentBehavior === 'na')      { score.starter += 18; score.noFee += 10; }
-
-      // Objetivo
-      if (a.mainGoal === 'cashback') { score.cashback += 30; }
-      if (a.mainGoal === 'miles')    { score.miles += 30; }
-      if (a.mainGoal === 'noFee')    { score.noFee += 30; }
-      if (a.mainGoal === 'build')    { score.starter += 30; }
-      if (a.mainGoal === 'premium')  { score.premium += 30; }
-      if (a.mainGoal === 'limit')    { score.premium += 18; score.cashback += 8; }
-
-      const ranked = CATEGORIES
-        .map(c => ({ ...c, score: Math.min(99, Math.max(40, Math.round(score[c.id]))) }))
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 4);
-      return ranked;
-    }
-
-    /* ---------- Recompensa por resposta ---------- */
-    function rewardForAnswer(def, anchor) {
-      const elapsed = (Date.now() - state.stepStartedAt) / 1000;
-      if (elapsed < 3 && !state.badges.includes('QUICK')) {
-        unlockBadge('QUICK', BADGE_META.QUICK.label);
+        $('#restartBtn').addEventListener('click', () => {
+          // Loop: reseta progresso mas preserva nome/e-mail pra continuar personalizado
+          const keepContact = { ...state.contact };
+          Object.assign(state, {
+            step: 1,
+            xp: 0,
+            levelIndex: 0,
+            badges: [],
+            answers: {},
+            contact: keepContact,
+            sessionStart: Date.now()
+          });
+          saveState();
+          toast('🔄 Novo diagnóstico iniciado. Suas respostas anteriores foram zeradas.');
+          render();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
       }
-      const xp = elapsed < 5 ? 15 : 10;
-      addXp(xp, anchor);
-      // Badge específico da etapa, se houver
-      if (def && def.afterBadge) {
-        unlockBadge(def.afterBadge.id, def.afterBadge.label);
-      }
-      // Heurística de "Focado": 3 etapas seguidas em <30s
-      checkFocused();
-    }
-    function checkFocused() {
-      // Conta as últimas 3 etapas concluídas em menos de 30s — usa apenas o tempo da sessão
-      const totalSec = (Date.now() - state.sessionStart) / 1000;
-      if (state.step >= 3 && totalSec < 90 && !state.badges.includes('FOCUSED')) {
-        unlockBadge('FOCUSED', BADGE_META.FOCUSED.label);
-      }
-    }
 
-    /* ---------- Navegação ---------- */
-    function goNext() {
-      state.step++;
-      saveState();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      render();
-    }
-    function goPrev() {
-      if (state.step <= 0) return;
-      state.step--;
-      saveState();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      render();
-    }
-    function resetAll() {
-      try { localStorage.removeItem(STORAGE_KEY); } catch (_) {}
-      Object.assign(state, {
-        step: 0, xp: 0, levelIndex: 0, badges: [],
-        answers: {}, contact: { name:'', email:'', consent:false },
-        sessionStart: Date.now()
+      /* ---------- Compute matches (lógica de scoring) ---------- */
+      const CATEGORIES = [
+        {
+          id: 'noFee', ico: '🪙', title: 'Cartões sem anuidade',
+          desc: 'Sem custo fixo mensal. Bom pra quem quer reduzir despesas e não usa muitos benefícios.'
+        },
+        {
+          id: 'cashback', ico: '💰', title: 'Cartões com cashback',
+          desc: 'Devolvem parte do valor das compras. Combina com quem paga a fatura integral.'
+        },
+        {
+          id: 'miles', ico: '✈️', title: 'Cartões de milhas e viagens',
+          desc: 'Acumulam pontos em programas aéreos. Indicados pra quem viaja com regularidade.'
+        },
+        {
+          id: 'starter', ico: '🌱', title: 'Cartões para construir crédito',
+          desc: 'Limites menores e critérios mais acessíveis. Foco em fortalecer o histórico.'
+        },
+        {
+          id: 'premium', ico: '💎', title: 'Cartões premium / black',
+          desc: 'Salas VIP, concierge, seguros e benefícios exclusivos. Renda comprovada exigida.'
+        },
+        {
+          id: 'restricted', ico: '🛟', title: 'Cartões para nome com restrição',
+          desc: 'Pré-pagos e consignados. Funcionam mesmo com nome negativado.'
+        }
+      ];
+
+      function computeMatches() {
+        const a = state.answers || {};
+        const score = {};
+        CATEGORIES.forEach(c => score[c.id] = 30);
+
+        // Bureau status (welcome)
+        if (a.bureauStatus === 'yes') { score.restricted += 35; score.starter += 18; score.premium -= 10; score.miles -= 5; }
+        if (a.bureauStatus === 'no') { score.cashback += 8; score.miles += 6; score.premium += 6; }
+        if (a.bureauStatus === 'unsure') { score.starter += 12; score.noFee += 10; }
+
+        // Limite desejado (welcome)
+        if (a.targetLimit === 'lt1k') { score.starter += 18; score.noFee += 15; score.restricted += 8; }
+        if (a.targetLimit === '1k-3k') { score.noFee += 12; score.cashback += 10; score.starter += 8; }
+        if (a.targetLimit === '3k-7k') { score.cashback += 15; score.miles += 10; }
+        if (a.targetLimit === 'gt7k') { score.premium += 22; score.miles += 18; score.cashback += 8; }
+
+        // Estilo
+        if (a.style === 'daily') { score.cashback += 25; score.noFee += 20; }
+        if (a.style === 'travel') { score.miles += 35; score.premium += 12; }
+        if (a.style === 'premium') { score.premium += 35; score.miles += 15; }
+        if (a.style === 'starter') { score.starter += 35; score.noFee += 18; }
+
+        // Gasto
+        if (a.spending === 'lt500') { score.noFee += 15; score.starter += 12; }
+        if (a.spending === '500-2k') { score.cashback += 10; score.noFee += 10; }
+        if (a.spending === '2k-5k') { score.cashback += 18; score.miles += 8; }
+        if (a.spending === '5k-15k') { score.miles += 18; score.premium += 18; score.cashback += 8; }
+        if (a.spending === 'gt15k') { score.premium += 30; score.miles += 18; }
+
+        // Renda
+        if (a.income === 'lt2k') { score.starter += 20; score.noFee += 15; score.restricted += 8; }
+        if (a.income === '2k-5k') { score.noFee += 15; score.cashback += 10; }
+        if (a.income === '5k-10k') { score.cashback += 12; score.miles += 12; }
+        if (a.income === '10k-20k') { score.premium += 20; score.miles += 18; }
+        if (a.income === 'gt20k') { score.premium += 35; score.miles += 22; }
+
+        // Perfil de crédito
+        if (a.creditProfile === 'clean') { score.premium += 15; score.cashback += 10; score.miles += 10; }
+        if (a.creditProfile === 'fair') { score.cashback += 12; score.noFee += 12; }
+        if (a.creditProfile === 'thin') { score.starter += 30; score.noFee += 15; }
+        if (a.creditProfile === 'restricted') { score.restricted += 45; score.starter += 18; score.premium = 5; score.miles = 8; }
+        if (a.creditProfile === 'unsure') { score.starter += 12; score.noFee += 10; }
+
+        // Pagamento
+        if (a.paymentBehavior === 'full') { score.cashback += 12; score.miles += 10; score.premium += 8; }
+        if (a.paymentBehavior === 'mostly') { score.cashback += 10; score.noFee += 8; }
+        if (a.paymentBehavior === 'minimum') { score.noFee += 15; score.starter += 10; score.premium -= 8; }
+        if (a.paymentBehavior === 'late') { score.restricted += 15; score.starter += 12; score.premium -= 12; }
+        if (a.paymentBehavior === 'na') { score.starter += 18; score.noFee += 10; }
+
+        // Objetivo
+        if (a.mainGoal === 'cashback') { score.cashback += 30; }
+        if (a.mainGoal === 'miles') { score.miles += 30; }
+        if (a.mainGoal === 'noFee') { score.noFee += 30; }
+        if (a.mainGoal === 'build') { score.starter += 30; }
+        if (a.mainGoal === 'premium') { score.premium += 30; }
+        if (a.mainGoal === 'limit') { score.premium += 18; score.cashback += 8; }
+
+        const ranked = CATEGORIES
+          .map(c => ({ ...c, score: Math.min(99, Math.max(40, Math.round(score[c.id]))) }))
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 4);
+        return ranked;
+      }
+
+      /* ---------- Recompensa por resposta ---------- */
+      function rewardForAnswer(def, anchor) {
+        const elapsed = (Date.now() - state.stepStartedAt) / 1000;
+        if (elapsed < 3 && !state.badges.includes('QUICK')) {
+          unlockBadge('QUICK', BADGE_META.QUICK.label);
+        }
+        const xp = elapsed < 5 ? 15 : 10;
+        addXp(xp, anchor);
+        // Badge específico da etapa, se houver
+        if (def && def.afterBadge) {
+          unlockBadge(def.afterBadge.id, def.afterBadge.label);
+        }
+        // Heurística de "Focado": 3 etapas seguidas em <30s
+        checkFocused();
+        // Cascata de notificações ao vivo
+        if (def && def.id) {
+          fireNotificationsFor(def, state.answers[def.id]);
+        }
+      }
+      function checkFocused() {
+        // Conta as últimas 3 etapas concluídas em menos de 30s — usa apenas o tempo da sessão
+        const totalSec = (Date.now() - state.sessionStart) / 1000;
+        if (state.step >= 3 && totalSec < 90 && !state.badges.includes('FOCUSED')) {
+          unlockBadge('FOCUSED', BADGE_META.FOCUSED.label);
+        }
+      }
+
+      /* ---------- Navegação ---------- */
+      function goNext() {
+        clearPendingTimers();
+        state.step++;
+        saveState();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        render();
+      }
+      function goPrev() {
+        if (state.step <= 0) return;
+        clearPendingTimers();
+        state.step--;
+        saveState();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        render();
+      }
+      function resetAll() {
+        try { localStorage.removeItem(STORAGE_KEY); } catch (_) { }
+        // Reset do painel ao vivo
+        stopBackgroundScan();
+        notifState.panel = { verified: 0, compatible: 0, preApproved: 0, vipOffers: 0 };
+        notifState.feed = [];
+        notifState.scan.idx = 0;
+        notifState.bgComplete = false;
+        ['liveVerified', 'liveCompatible', 'livePreApproved', 'liveVipOffers'].forEach(id => {
+          const el = $('#' + id); if (el) el.textContent = '0';
+        });
+        ['chipVerified', 'chipCompatible', 'chipPreApproved', 'chipVipOffers'].forEach(id => {
+          const el = $('#' + id); const s = el && el.querySelector('strong');
+          if (s) s.textContent = '0';
+        });
+        const feed = $('#liveFeed'); if (feed) feed.innerHTML = '';
+        Object.assign(state, {
+          step: 0, xp: 0, levelIndex: 0, badges: [],
+          answers: {}, contact: { name: '', email: '', consent: false },
+          sessionStart: Date.now()
+        });
+        render();
+      }
+
+      /* ---------- Anchor sticky bottom — botão fechar + inicialização ---------- */
+      (function initAnchor() {
+        const closeBtn = document.getElementById('adAnchorClose');
+        if (closeBtn) closeBtn.addEventListener('click', () => {
+          const a = document.getElementById('adAnchor');
+          if (a) a.classList.add('is-hidden');
+        });
+        // Inicializa o anchor via safe queue (respeita throttle global)
+        const ins = document.getElementById('adAnchorIns');
+        if (ins) safeAdPush(ins);
+      })();
+
+      /* ---------- Init AdSense + render ---------- */
+      // Sincroniza state.step com a URL (deep link via ?etapa=N)
+      try {
+        const params = new URLSearchParams(location.search);
+        const urlStep = parseInt(params.get('etapa') || '0', 10);
+        if (!isNaN(urlStep) && urlStep > 0 && urlStep <= TOTAL_STEPS) {
+          state.step = urlStep;
+        }
+      } catch (_) {}
+
+      // Botão Voltar do navegador navega entre etapas como esperado
+      window.addEventListener('popstate', (e) => {
+        if (e.state && typeof e.state.step === 'number') {
+          state.step = e.state.step;
+          saveState();
+          // Re-renderiza sem chamar pushVirtualUrl (popstate já mudou a URL)
+          const root = $('#stepRoot');
+          refreshAdZones();
+          setTimeout(triggerAds, 80);
+          render();
+        }
       });
+
       render();
-    }
 
-    /* ---------- Init AdSense + render ---------- */
-    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (_) {}
-    render();
-
-    // Expor pro debug (opcional)
-    window.__arthFunnel = { state, reset: resetAll };
-  })();
+      // Expor pro debug (opcional)
+      window.__arthFunnel = { state, reset: resetAll };
+    })();
   </script>
 </body>
+
 </html>
